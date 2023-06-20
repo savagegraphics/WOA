@@ -12,9 +12,10 @@ const BottomNavigationComponent = () => {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(router.pathname);
 
-  const handleTabChange = (event, newValue) => {
+  const handleTabChange = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
   };
+  
 
   return (
     <BottomNavigation value={activeTab} onChange={handleTabChange}>

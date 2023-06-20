@@ -14,25 +14,18 @@ const BottomNavigationComponent = () => {
 
   const handleTabChange = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
+    router.push(newValue);
   };
-  
 
   return (
     <BottomNavigation value={activeTab} onChange={handleTabChange}>
-      <Link href="/">
-        <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} selected={activeTab === '/'} />
-      </Link>
-      <Link href="/about">
-        <BottomNavigationAction label="About" value="/about" icon={<AppRegistrationIcon />} selected={activeTab === '/about'} />
-      </Link>
-      <Link href="/registry">
-        <BottomNavigationAction label="Registry" value="/registry" icon={<DescriptionIcon />} selected={activeTab === '/registry'} />
-      </Link>
-      <Link href="/shop">
-        <BottomNavigationAction label="Shop" value="/shop" icon={<ShoppingBagIcon />} selected={activeTab === '/shop'} />
-      </Link>
+      <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />
+      <BottomNavigationAction label="About" value="/about" icon={<AppRegistrationIcon />} />
+      <BottomNavigationAction label="Registry" value="/registry" icon={<DescriptionIcon />} />
+      <BottomNavigationAction label="Shop" value="/shop" icon={<ShoppingBagIcon />} />
     </BottomNavigation>
   );
 };
+
 
 export default BottomNavigationComponent;

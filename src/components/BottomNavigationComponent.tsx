@@ -18,7 +18,13 @@ const BottomNavigationComponent = () => {
   };
 
   return (
-    <BottomNavigation value={activeTab} onChange={handleTabChange}>
+    <BottomNavigation value={activeTab} onChange={handleTabChange}       style={{
+      position: 'fixed',
+      left: 0,
+      bottom: 0,
+      width: '100%',
+      zIndex: 9999, // Adjust the z-index value if needed
+    }}>
       <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />
       <BottomNavigationAction label="About" value="/about" icon={<AppRegistrationIcon />} />
       <BottomNavigationAction label="Registry" value="/registry" icon={<DescriptionIcon />} />

@@ -18,7 +18,7 @@ const BottomNavigationComponent = () => {
   };
 
   return (
-    <BottomNavigation value={activeTab} onChange={handleTabChange}       style={{
+    <BottomNavigation value={activeTab} onChange={handleTabChange} style={{
       position: 'fixed',
       left: 0,
       bottom: 0,

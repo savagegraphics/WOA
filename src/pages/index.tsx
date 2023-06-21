@@ -4,6 +4,7 @@ import AnewSeven from '../layouts/AnewSeven'
 import 'tailwindcss/tailwind.css';
 import Navie from '../components/Navie'
 import Hero from '../components/Hero'
+import Tailwind from '../components/Tailwind';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <Navie />
       <Hero />
       <AnewSeven />
+      <Tailwind />
       <BottomNavigationComponent />
     </div>
   );

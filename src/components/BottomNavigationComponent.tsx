@@ -26,8 +26,8 @@ const BottomNavigationComponent = () => {
       zIndex: 9999, // Adjust the z-index value if needed
     }}>
       <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />
-      <BottomNavigationAction label="About" value="/about" icon={<AppRegistrationIcon />} />
       <BottomNavigationAction label="Registry" value="/registry" icon={<DescriptionIcon />} />
+      <BottomNavigationAction label="About" value="/about" icon={<AppRegistrationIcon />} />
       <BottomNavigationAction label="Shop" value="/shop" icon={<ShoppingBagIcon />} />
     </BottomNavigation>
   );

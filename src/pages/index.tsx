@@ -9,7 +9,7 @@ import Tailwind from '../components/Tailwind';
 
 const Home = () => {
   return (
-    <div className="overflow-hidden">
+    <div className='overflow-hidden'>
       <Navie />
       <Hero />
       <AnewSeven />

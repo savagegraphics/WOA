@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const AnewFive = () => {
     return (
@@ -19,26 +20,34 @@ const AnewFive = () => {
                         <p className="text-gray-700 text-base md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</p>
                     </div>
                     <div className="flex items-center space-x-3">
-                        <a href="/" className="w-32 transition duration-300 hover:shadow-lg">
-                            <Image src="https://kitwind.io/assets/kometa/app-store.png"
-                                className="object-cover object-top w-full h-auto mx-auto"
-                                alt=""
-                                width={ 1260 }
-                                height={ 750 } />
-                        </a>
-                        <a href="/" className="w-32 transition duration-300 hover:shadow-lg">
-                            <Image src="https://kitwind.io/assets/kometa/google-play.png"
-                                className="object-cover object-top w-full h-auto mx-auto"
-                                alt=""
-                                width={ 1260 }
-                                height={ 750 }
-                            />
-                        </a>
+                        <Link href="/">
+                            <a className="w-32 transition duration-300 hover:shadow-lg">
+                                <Image
+                                    src="https://kitwind.io/assets/kometa/app-store.png"
+                                    className="object-cover object-top w-full h-auto mx-auto"
+                                    alt=""
+                                    width={ 1260 }
+                                    height={ 750 }
+                                />
+                            </a>
+                        </Link>
+                        <Link href="/">
+                            <a className="w-32 transition duration-300 hover:shadow-lg">
+                                <Image
+                                    src="https://kitwind.io/assets/kometa/google-play.png"
+                                    className="object-cover object-top w-full h-auto mx-auto"
+                                    alt=""
+                                    width={ 1260 }
+                                    height={ 750 }
+                                />
+                            </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="flex items-center justify-center lg:w-1/2">
                     <div className="w-2/5">
-                        <Image className="object-cover"
+                        <Image
+                            className="object-cover"
                             src="https://kitwind.io/assets/kometa/one-girl-phone.png"
                             alt=""
                             width={ 1260 }
@@ -46,11 +55,13 @@ const AnewFive = () => {
                         />
                     </div>
                     <div className="w-5/12 -ml-16 lg:-ml-32">
-                        <Image className="object-cover"
+                        <Image
+                            className="object-cover"
                             src="https://kitwind.io/assets/kometa/two-girls-phone.png"
                             alt=""
                             width={ 1260 }
-                            height={ 750 } />
+                            height={ 750 }
+                        />
                     </div>
                 </div>
             </div>

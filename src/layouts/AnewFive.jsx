@@ -20,27 +20,23 @@ const AnewFive = () => {
                         <p className="text-gray-700 text-base md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</p>
                     </div>
                     <div className="flex items-center space-x-3">
-                        <Link href="/">
-                            <a className="w-32 transition duration-300 hover:shadow-lg">
-                                <Image
-                                    src="https://kitwind.io/assets/kometa/app-store.png"
-                                    className="object-cover object-top w-full h-auto mx-auto"
-                                    alt=""
-                                    width={ 1260 }
-                                    height={ 750 }
-                                />
-                            </a>
+                        <Link href="/" className="w-32 transition duration-300 hover:shadow-lg">
+                            <Image
+                                src="https://kitwind.io/assets/kometa/app-store.png"
+                                className="object-cover object-top w-full h-auto mx-auto"
+                                alt=""
+                                width={ 1260 }
+                                height={ 750 }
+                            />
                         </Link>
-                        <Link href="/">
-                            <a className="w-32 transition duration-300 hover:shadow-lg">
-                                <Image
-                                    src="https://kitwind.io/assets/kometa/google-play.png"
-                                    className="object-cover object-top w-full h-auto mx-auto"
-                                    alt=""
-                                    width={ 1260 }
-                                    height={ 750 }
-                                />
-                            </a>
+                        <Link href="/" className="w-32 transition duration-300 hover:shadow-lg">
+                            <Image
+                                src="https://kitwind.io/assets/kometa/google-play.png"
+                                className="object-cover object-top w-full h-auto mx-auto"
+                                alt=""
+                                width={ 1260 }
+                                height={ 750 }
+                            />
                         </Link>
                     </div>
                 </div>

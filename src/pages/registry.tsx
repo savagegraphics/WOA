@@ -6,7 +6,11 @@ import AnewSeven from '../layouts/AnewSeven'
 import GetStarted from '../registry/GetStarted'
 import Landpage2 from '../registry/Landpage2'
 import Footer from '../components/Footer';
-import AnewTwo from '../layouts/AnewTwo'
+import AnewEight from '../layouts/AnewEight';
+import AnewTen from '../layouts/AnewTen';
+import CTA from '../registry/CTA';
+import Landpage from '../components/Landpage';
+import Card from '../components/Card';
 
 
 
@@ -16,7 +20,11 @@ const registry = () => {
       <Navie />
       <Landpage2 />
       <AnewSeven />
-      <AnewTwo />
+      <AnewEight />
+      <AnewTen />
+      <Card />
+      <CTA />
+      <Landpage />
       <Footer />
       <BottomNavigationComponent />
     </div>

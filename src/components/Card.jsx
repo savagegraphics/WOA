@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Image1 from '../assets/imgback.PNG'
-
+import Link from 'next/link'
 
 
 

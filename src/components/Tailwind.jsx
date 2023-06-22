@@ -8,7 +8,7 @@ import Imageback from '../assets/fam8.jpg'
 
 const Tailwind = () => {
     return (
-        <div className="relative max-w-screen-xl p-4 pl-8 px-4 mx-auto mb-10 bg-white dark:bg-gray-800 sm:px-6 lg:px-8 py-26">
+        <div style={ { backgroundColor: '#fff', marginTop: '4rem ' } } className="relative max-w-screen-xl p-4 pl-8 px-4 mx-auto mb-10 bg-white dark:bg-gray-800 sm:px-6 lg:px-8 py-26">
             <div className="relative">
                 <div className="grid grid-flow-row-dense grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
                     <div className="max-w-2xl md:ml-auto">

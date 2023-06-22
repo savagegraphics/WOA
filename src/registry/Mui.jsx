@@ -6,7 +6,7 @@ import Imageg from "../assets/fam4.jpg";
 
 const Mui = () => {
     return (
-        <div style={ { background: '#fff' } } className="bg-white dark:bg-gray-800 sm:mt-12 p-6 overflow-hidden relative lg:flex lg:items-center">
+        <div style={ { background: '#fff', marginTop: '6rem' } } className="bg-white dark:bg-gray-800  p-6 overflow-hidden relative lg:flex lg:items-center">
             <div className="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
                 <h2 style={ { color: '#df3d91' } } className="text-3xl font-extrabold text-[#df3d91] dark:text-white sm:text-4xl">
                     <span className="block">FREE Hello Baby Box</span>

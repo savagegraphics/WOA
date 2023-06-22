@@ -12,7 +12,7 @@ const AnewSeven = () => {
                         </svg>
                     </div>
                     <div className="max-w-xl mb-10">
-                        <h2 className="text-3xl font-extrabold text-[#85586F] dark:text-white sm:text-4xl">
+                        <h2 style={ { color: '#85586F' } } className="text-3xl font-extrabold dark:text-white sm:text-4xl">
                             <span className="block">FREE Hello Baby Box</span>
                         </h2>
                         <p className="text-base text-gray-700 md:text-lg mt-10">
@@ -35,17 +35,21 @@ const AnewSeven = () => {
                         <div className="relative w-28 h-28 sm:w-48 sm:h-48 xl:w-56 xl:h-56">
                             <Image
                                 className="object-cover rounded shadow-lg"
-                                src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                                 alt=""
-                                layout="fill"
+                                layout="responsive"
+                                width={ 500 }
+                                height={ 750 }
                             />
                         </div>
                         <div className="relative w-20 h-20 sm:w-32 sm:h-32 xl:w-40 xl:h-40 mt-6">
                             <Image
                                 className="object-cover rounded shadow-lg"
-                                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                                src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                                 alt=""
-                                layout="fill"
+                                layout="responsive"
+                                width={ 500 }
+                                height={ 750 }
                             />
                         </div>
                     </div>
@@ -53,9 +57,11 @@ const AnewSeven = () => {
                         <div className="relative w-40 h-40 sm:w-64 sm:h-64 xl:w-80 xl:h-80">
                             <Image
                                 className="object-cover rounded shadow-lg"
-                                src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                                src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
                                 alt=""
-                                layout="fill"
+                                layout="responsive"
+                                width={ 500 }
+                                height={ 500 }
                             />
                         </div>
                     </div>

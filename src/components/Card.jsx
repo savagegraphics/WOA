@@ -8,7 +8,7 @@ import Image1 from '../assets/imgback.PNG'
 const Card = () => {
     return (
         <div className="flex-wrap items-center justify-center gap-8 mt-12 mb-12 text-left sm:flex">
-            <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 p-8 pl-12 mt-6 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div style={ { background: '#fff' } } className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 p-8 pl-12 mt-6 rounded-lg shadow-lg dark:bg-gray-800">
                 <p className="text-gray-500 text-md dark:text-gray-300">
                     <span className="text-lg font-bold text-custom-D14D72">
                         “
@@ -32,7 +32,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 p-8 pl-12 mt-6 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div style={ { background: '#fff' } } className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 p-8 pl-12 mt-6 rounded-lg shadow-lg dark:bg-gray-800">
                 <p className="text-gray-500 text-md dark:text-gray-300">
                     <span className="text-lg font-bold text-custom-D14D72">
                         “
@@ -56,7 +56,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 p-8 pl-12 mt-6 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div style={ { background: '#fff' } } className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 p-8 pl-12 mt-6 rounded-lg shadow-lg dark:bg-gray-800">
                 <p className="text-gray-500 text-md dark:text-gray-300">
                     <span className="text-lg font-bold text-custom-D14D72">
                         “

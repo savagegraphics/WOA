@@ -11,6 +11,7 @@ import AnewTen from '../layouts/AnewTen';
 import CTA from '../registry/CTA';
 import Landpage from '../components/Landpage';
 import Card from '../components/Card';
+import MultiCard from '../registry/MultiCard';
 
 
 
@@ -19,6 +20,7 @@ const registry = () => {
     <div className='overflow-hidden'>
       <Navie />
       <Landpage2 />
+      <MultiCard />
       <AnewSeven />
       <AnewEight />
       <AnewTen />

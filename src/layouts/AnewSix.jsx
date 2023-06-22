@@ -5,14 +5,13 @@ const AnewSix = () => {
     return (
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="grid max-w-screen-lg gap-8 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
-                <div style={ { backgroundColor: '#fff' } } className="transition duration-300 transform rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
-                    <div className="relative">
+                <div style={ { backgroundColor: '#fff' } } className="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
+                    <div className="relative h-64 lg:h-80 xl:h-96">
                         <Image
-                            className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
+                            className="object-cover w-full h-full rounded-t"
                             src="https://images.pexels.com/photos/3182796/pexels-photo-3182796.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt=""
-                            width={ 1260 }
-                            height={ 750 }
+                            layout="fill"
                         />
                         <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
                     </div>
@@ -35,13 +34,12 @@ const AnewSix = () => {
                     </div>
                 </div>
                 <div className="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
-                    <div className="relative">
+                    <div className="relative h-64 lg:h-80 xl:h-96">
                         <Image
-                            className="object-cover w-full h-64 rounded-t lg:h-80 xl:h-96"
+                            className="object-cover w-full h-full rounded-t"
                             src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt=""
-                            width={ 1260 }
-                            height={ 750 }
+                            layout="fill"
                         />
                         <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
                     </div>
@@ -68,4 +66,4 @@ const AnewSix = () => {
     );
 };
 
-export default AnewSix
+export default AnewSix;

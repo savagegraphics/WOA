@@ -50,7 +50,7 @@ const Card = () => {
                         <span style={ { color: '#606C5D' } } className="text-sm font-semibold text-[#85586F]">
                             Omolara M.
                         </span>
-                        <span className="flex items-center text-[#6a1a447d] text-xs dark:text-gray-300">
+                        <span style={ { color: '#606C5D' } } className="flex items-center text-[#6a1a447d] text-xs dark:text-gray-300">
                             User of Babylist
                         </span>
                     </div>

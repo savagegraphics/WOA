@@ -27,7 +27,7 @@ const Tailwind = () => {
                                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                         </svg>
                                     </span>
-                                    <span className="ml-4 text-base font-medium leading-6 text-dark-500 dark:text-gray-200">
+                                    <span style={ { color: '#606C5D' } } className="ml-4 text-base font-medium leading-6 text-dark-500 dark:text-gray-200">
                                         15% completion discount to the Babylist shop.
                                     </span>
                                 </div>
@@ -39,7 +39,7 @@ const Tailwind = () => {
                                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                         </svg>
                                     </span>
-                                    <span className="ml-4 text-base font-medium leading-6 text-dark-500 dark:text-gray-200">
+                                    <span style={ { color: '#606C5D' } } className="ml-4 text-base font-medium leading-6 text-dark-500 dark:text-gray-200">
                                         Add any item from any store.
                                     </span>
                                 </div>
@@ -51,7 +51,7 @@ const Tailwind = () => {
                                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                         </svg>
                                     </span>
-                                    <span className="ml-4 text-base font-medium leading-6 text-dark-500 dark:text-gray-200">
+                                    <span style={ { color: '#606C5D' } } className="ml-4 text-base font-medium leading-6 text-dark-500 dark:text-gray-200">
                                         Add meaningful gifts you can&apos;t buy in stores.
                                     </span>
                                 </div>
@@ -63,7 +63,7 @@ const Tailwind = () => {
                                             <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                                         </svg>
                                     </span>
-                                    <span className="ml-4 text-base font-medium leading-6 text-dark-500 dark:text-gray-200">
+                                    <span style={ { color: '#606C5D' } } className="ml-4 text-base font-medium leading-6 text-dark-500 dark:text-gray-200">
                                         Free tips to get your Baby the best of the best
                                     </span>
                                 </div>

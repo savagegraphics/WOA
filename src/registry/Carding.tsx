@@ -40,11 +40,15 @@ const Carding = () => {
                                     <Image
                                         src={callout.imageSrc}
                                         alt={callout.imageAlt}
-                                        className="h-full w-full object-cover object-center"
-                                        width={280}
-                                        height={180}
+                                        layout="responsive"
+                                        width={640}
+                                        height={480}
+                                        objectFit="cover"
+                                        objectPosition="center"
+                                        className="h-full w-full"
                                     />
                                 </div>
+
                                 <h3 className="mt-6 text-sm text-gray-500">
                                     <Link href={callout.href}>
                                         <span className="absolute inset-0" />

@@ -13,13 +13,14 @@ import Landpage from '../components/Landpage';
 import Card from '../components/Card';
 // import MultiCard from '../registry/MultiCard';
 import Carding from '../registry/Carding';
+import Hero from '../components/Hero';
 
 
 const registry = () => {
   return (
     <div className='overflow-hidden'>
       <Navie />
-      <Landpage2 />
+      <Hero />
       {/* <MultiCard /> */}
       <Carding />
       <AnewSeven />

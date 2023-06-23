@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const callouts = [
     {
@@ -24,44 +24,44 @@ const callouts = [
         imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
         href: '#',
     },
-]
+];
 
 const Carding = () => {
     return (
-        <div className="bg-gray-100">
+        <div className="bg-gray-100 mt-12">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
                     <h2 className="text-2xl font-bold text-gray-900">Collections</h2>
 
-                    <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+                    <div className="mt-6 space-y-12 lg:space-y-0 lg:flex lg:flex-wrap lg:-mx-4">
                         {callouts.map((callout) => (
-                            <div key={callout.name} className="group relative">
-                                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
-                                    <Image
-                                        src={callout.imageSrc}
-                                        alt={callout.imageAlt}
-                                        layout="responsive"
-                                        width={640}
-                                        height={480}
-                                        objectFit="cover"
-                                        objectPosition="center"
-                                        className="h-full w-full"
-                                    />
+                            <div key={callout.name} className="lg:w-1/3 px-4">
+                                <div className="group relative">
+                                    <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+                                        <Image
+                                            src={callout.imageSrc}
+                                            alt={callout.imageAlt}
+                                            layout="responsive"
+                                            width={640}
+                                            height={480}
+                                            className="h-full w-full object-cover"
+                                        />
+                                    </div>
+                                    <h3 className="mt-6 text-sm text-gray-500">
+                                        <Link href={callout.href}>
+                                            <span className="absolute inset-0" />
+                                            {callout.name}
+                                        </Link>
+                                    </h3>
+                                    <p className="text-base font-semibold text-gray-900">{callout.description}</p>
                                 </div>
-
-                                <h3 className="mt-6 text-sm text-gray-500">
-                                    <Link href={callout.href}>
-                                        <span className="absolute inset-0" />
-                                        {callout.name}
-                                    </Link>
-                                </h3>
-                                <p className="text-base font-semibold text-gray-900">{callout.description}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
-export default Carding
+    );
+};
+
+export default Carding;

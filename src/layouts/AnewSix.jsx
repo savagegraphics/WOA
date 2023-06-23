@@ -12,7 +12,7 @@ const AnewSix = () => {
                     <div className="relative h-64 lg:h-80 xl:h-96">
                         <Image
                             className="object-cover w-full h-full rounded-t"
-                            src="https://images.pexels.com/photos/3182796/pexels-photo-3182796.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt=""
                             width={ 1260 }
                             height={ 750 }
@@ -41,7 +41,7 @@ const AnewSix = () => {
                     <div className="relative h-64 lg:h-80 xl:h-96">
                         <Image
                             className="object-cover w-full h-full rounded-t"
-                            src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                             alt=""
                             width={ 1260 }
                             height={ 750 }

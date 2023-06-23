@@ -6,7 +6,7 @@ import profileImage from '../assets/gay.jpg'
 
 const CTA = () => {
     return (
-        <div className="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
+        <div style={ { backgroundColor: '#fff' } } className="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
             <p className="mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-200">
                 Personal Advice from Real People
             </p>

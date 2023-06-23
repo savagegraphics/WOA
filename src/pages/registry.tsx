@@ -12,7 +12,7 @@ import CTA from '../registry/CTA';
 import Landpage from '../components/Landpage';
 import Card from '../components/Card';
 // import MultiCard from '../registry/MultiCard';
-
+import Carding from '../registry/Carding';
 
 
 const registry = () => {
@@ -21,6 +21,7 @@ const registry = () => {
       <Navie />
       <Landpage2 />
       {/* <MultiCard /> */}
+      <Carding />
       <AnewSeven />
       <AnewEight />
       <AnewTen />

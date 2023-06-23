@@ -6,6 +6,7 @@ import Cart from '../guides/Cart'
 
 
 
+
 const shop = () => {
   return (
     <div className='overflow-hidden'>

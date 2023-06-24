@@ -15,11 +15,11 @@ export default function Home() {
 
                 <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
                     <div className="max-w-xl text-center sm:text-left">
-                        <h1 className="text-3xl font-extrabold sm:text-5xl">
+                        <h1 className="text-xl text-indigo-400 font-thin sm:text-5xl">
                             Put anything onto your baby
-                            <strong className="block font-extrabold text-rose-700">
+                            <h2 className="block font-thin text-rose-700">
                                 registry from any store.
-                            </strong>
+                            </h2>
                         </h1>
 
                         <p className="mt-4 max-w-lg sm:text-xl/relaxed">

@@ -11,6 +11,7 @@ import Tailwindtwo from '../components/Tailwindtwo';
 import Landpage from '../components/Landpage';
 import AnewSix from '../layouts/AnewSix';
 import AnewTen from '../layouts/AnewTen';
+import Anew from '../layouts/Anew'
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
       <Mui />
       <Tailwind />
       <AnewSix />
+      <Anew />
       <AnewTen />
       <Card />
       <Tailwindtwo />

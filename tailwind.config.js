@@ -1,12 +1,24 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/pages/**/*.{html,js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{html,js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{html,js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     colors: {
+      indigo: {
+        '50': '#f5faff',
+        '100': '#eef5ff',
+        '200': '#d6e6ff',
+        '300': '#bdd5ff',
+        '400': '#8bb2ff',
+        '500': '#598fff',
+        '600': '#4f7de6',
+        '700': '#4166cc',
+        '800': '#3553a3',
+        '900': '#2b437f',
+      },
+      'transparent': 'transparent',
+      'current': 'currentColor',
+      'black': '#000',
       'white': '#fff',
       'blue': '#1fb6ff',
       'purple': '#7e5bef',
@@ -36,6 +48,5 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
-    require('tailwindcss-children'),
   ],
 }

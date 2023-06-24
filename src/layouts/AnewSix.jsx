@@ -19,7 +19,7 @@ const AnewSix = () => {
                         />
                         <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
                     </div>
-                    <div className="px-6 py-8 border border-t-0 rounded-b sm:px-8">
+                    <div className="px-6 py-8 border border-gray-light border-t-0 rounded-b sm:px-8">
                         <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
                             Our Team
                         </h5>
@@ -48,7 +48,7 @@ const AnewSix = () => {
                         />
                         <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
                     </div>
-                    <div className="px-6 py-8 border border-t-0 rounded-b sm:px-8">
+                    <div className="px-6 py-8 border border-gray-light border-t-0 rounded-b sm:px-8">
                         <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
                             Hire Us
                         </h5>

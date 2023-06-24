@@ -11,7 +11,7 @@ import AnewTen from '../layouts/AnewTen';
 import CTA from '../registry/CTA';
 import Landpage from '../components/Landpage';
 import Card from '../components/Card';
-// import MultiCard from '../registry/MultiCard';
+import MultiCard from '../registry/MultiCard';
 import Carding from '../registry/Carding';
 import Hero from '../components/Hero';
 
@@ -21,7 +21,7 @@ const registry = () => {
     <div className='overflow-hidden'>
       <Navie />
       <Hero />
-      {/* <MultiCard /> */}
+      <MultiCard />
       <Carding />
       <AnewSeven />
       <AnewEight />

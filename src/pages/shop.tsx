@@ -4,6 +4,7 @@ import Navie from '../components/Navie'
 import 'tailwindcss/tailwind.css';
 import Cart from '../guides/Cart'
 import Wall from '../shop/Wall'
+import LPage from '../shop/LPage'
 
 
 
@@ -13,6 +14,7 @@ const shop = () => {
     <div className='overflow-hidden'>
       <Navie />
       <Cart />
+      <LPage />
       <Wall />
       <BottomNavigationComponent />
     </div>

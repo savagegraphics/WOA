@@ -14,6 +14,9 @@ import Card from '../components/Card';
 import MultiCard from '../registry/MultiCard';
 import Carding from '../registry/Carding';
 import Hero from '../components/Hero';
+import Cardt from '../registry/Cardt';
+import CardtOne from '../registry/CardtOne';
+import CardtTwo from '../registry/CardtTwo';
 
 
 const registry = () => {
@@ -21,6 +24,9 @@ const registry = () => {
     <div className='overflow-hidden'>
       <Navie />
       <Hero />
+      <Cardt />
+      <CardtOne />
+      <CardtTwo />
       <MultiCard />
       <Carding />
       <AnewSeven />

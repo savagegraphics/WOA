@@ -9,8 +9,8 @@ function MyComponent() {
                         src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                         alt="tailwind logo"
                         className="rounded-xl"
-                        width={800}
-                        height={800}
+                        width={500}
+                        height={500}
                     />
                 </div>
                 <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
@@ -20,7 +20,7 @@ function MyComponent() {
                         </h4>
                     </div>
                     <p className="md:text-lg text-gray-500 text-base">
-                        The best kept secret of The Bahamas is the country's sheer size and diversity. With 16 major islands, The
+                        The best kept secret of The Bahamas is the country&apos;s sheer size and diversity. With 16 major islands, The
                         Bahamas is an unmatched destination
                     </p>
                 </div>

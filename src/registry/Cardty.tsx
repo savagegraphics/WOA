@@ -22,7 +22,7 @@ function Cardty() {
                         <div className="mb-10">
                             <div>   <h1 className="font-bold uppercase text-2xl mb-5">Cash Funds</h1></div>
                             <div>   <p className="text-sm">
-                                Start that college fund (or diaper fund) with help from your village. We'll transfer the cash straight to your bank account.
+                                Start that college fund (or diaper fund) with help from your village. We&apos;ll transfer the cash straight to your bank account.
                             </p></div>
                         </div>
                         <div>

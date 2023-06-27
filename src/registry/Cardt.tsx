@@ -15,7 +15,7 @@ function Cardt() {
                     <div> <h1 className="text-lg sm:text-2xl font-thin text-gray-600">
                         Support Indie Shops and Makers                    </h1></div>
                     <div>   <p className="text-gray-500 text-sm sm:text-base line-clamp-3">
-                        Add unique gifts that you wouldn't be able to find at a big-box store.                    </p></div>
+                        Add unique gifts that you wouldn&apos;t be able to find at a big-box store.                    </p></div>
                 </div>
             </div>
         </div>

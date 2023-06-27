@@ -2,29 +2,25 @@ import Image from 'next/image';
 
 function MyComponent() {
     return (
-        <div className="flex flex-col justify-center h-screen">
-            <div className="relative flex flex-col md:flex-row-reverse md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
-                <div className="w-full md:w-1/3 bg-white grid place-items-center">
-                    <Image
-                        src="https://images.pexels.com/photos/4381392/pexels-photo-4381392.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        alt="tailwind logo"
-                        className="rounded-xl"
-                        width={500}
-                        height={500}
-                    />
+        <div className="flex flex-col items-center justify-center mt-10 mb-10">
+            <hr className="border-gray-light w-11/12 mx-auto mb-8 mt-8" />
+            <div className="text-center text-3xl mt-8 mb-8">Get What You Really Want</div>
+            <div className="bg-white p-4 w-80 max-w-3xl sm:w-full sm:p-4 h-auto sm:h-64 rounded-2xl shadow-lg flex flex-col sm:flex-row gap-5 select-none">
+                <div
+                    style={{
+                        backgroundImage:
+                            'url("https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")',
+                    }}
+                    className="h-52 sm:h-full sm:w-72 rounded-xl bg-gray-100 bg-center bg-cover"
+                ></div>
+                <div className="flex lg:pt-18 md:pt-14 sm:flex-1 flex-col gap-2 p-1">
+                    <h1 className="text-lg sm:text-2xl font-thin text-gray-600">
+                        Add from Any Store
+                        (yes, really!)
+                    </h1>
+                    <p className="text-gray-500 text-sm sm:text-base line-clamp-3">
+                        Put anything from any store (big or small) onto your baby registry.                    </p>
                 </div>
-                <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3">
-                    <div>
-                        <h4 className="font-black text-gray-800 md:text-3xl text-xl">
-                            The Majestic and Wonderful Bahamas
-                        </h4>
-                    </div>
-                    <p className="md:text-lg text-gray-500 text-base">
-                        The best kept secret of The Bahamas is the country&apos;s sheer size and diversity. With 16 major islands, The
-                        Bahamas is an unmatched destination
-                    </p>
-                </div>
-
             </div>
         </div>
     );

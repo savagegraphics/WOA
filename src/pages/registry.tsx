@@ -2,40 +2,32 @@ import React from 'react'
 import 'tailwindcss/tailwind.css';
 import BottomNavigationComponent from '../components/BottomNavigationComponent';
 import Navie from '../components/Navie'
-import AnewSeven from '../layouts/AnewSeven'
-import GetStarted from '../registry/GetStarted'
-import Landpage2 from '../registry/Landpage2'
 import Footer from '../components/Footer';
-import AnewEight from '../layouts/AnewEight';
-import AnewTen from '../layouts/AnewTen';
 import CTA from '../registry/CTA';
 import Landpage from '../components/Landpage';
 import Card from '../components/Card';
-import MultiCard from '../registry/MultiCard';
 import Carding from '../registry/Carding';
-import Hero from '../components/Hero';
 import Cardt from '../registry/Cardt';
 import CardtOne from '../registry/CardtOne';
+import MultiCard from '../registry/MultiCard';
 import Cardty from '../registry/Cardty';
-import CardtTwo from '../registry/CardtTwo'
+import CardtTwo from '../registry/CardtTwo';
+import Navbar from '../components/Navbar'
+
 
 
 const registry = () => {
   return (
     <div className='overflow-hidden'>
-      <Navie />
-      <Hero />
+      <Navbar />
+      <MultiCard />
       <CardtOne />
       <CardtTwo />
       <Cardt />
       <Cardty />
-      <MultiCard />
       <Carding />
-      <AnewSeven />
-      <AnewEight />
-      <AnewTen />
-      <Card />
       <CTA />
+      <Card />
       <Landpage />
       <Footer />
       <BottomNavigationComponent />

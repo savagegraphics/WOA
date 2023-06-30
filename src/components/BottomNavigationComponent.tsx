@@ -27,7 +27,7 @@ const BottomNavigationComponent = () => {
     }}>
       <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />
       <BottomNavigationAction label="Registry" value="/registry" icon={<DescriptionIcon />} />
-      <BottomNavigationAction label="About" value="/about" icon={<AppRegistrationIcon />} />
+      <BottomNavigationAction label="Guides" value="/guides" icon={<AppRegistrationIcon />} />
       <BottomNavigationAction label="Shop" value="/shop" icon={<ShoppingBagIcon />} />
     </BottomNavigation>
   );

@@ -2,7 +2,6 @@ import React from 'react';
 import BottomNavigationComponent from '../components/BottomNavigationComponent';
 import 'tailwindcss/tailwind.css';
 import Navie from '../components/Navie'
-import Hero from '../components/Hero'
 import Tailwind from '../components/Tailwind';
 import Mui from '../registry/Mui'
 import Card from '../components/Card';
@@ -12,18 +11,27 @@ import Landpage from '../components/Landpage';
 import AnewSix from '../layouts/AnewSix';
 import AnewTen from '../layouts/AnewTen';
 import Anew from '../layouts/Anew'
-
+import Heros from '../components/Heros'
+import AAHero from '../components/AAHero'
+import Wall from '../shop/Wall'
+import CTAS from '../guides/CTAS'
+import CTASS from '../guides/CTASS'
+import Navbar from '../components/Navbar'
 
 
 const Home = () => {
   return (
     <div className='overflow-hidden'>
-      <Navie />
-      <Hero />
+      <Navbar />
+      {/* <AAHero /> */}
+      <Anew />
       <Mui />
+      <Heros />
+      <Wall />
+      <CTAS />
+      <CTASS />
       <Tailwind />
       <AnewSix />
-      <Anew />
       <AnewTen />
       <Card />
       <Tailwindtwo />

@@ -17,9 +17,9 @@ export default function Home() {
                     <div className="max-w-xl text-center sm:text-left">
                         <h1 className="text-xl text-gray-dark font-thin sm:text-5xl">
                             Put anything onto your baby
-                            <h2 className="block font-thin text-rose-700">
+                            <div>   <h3 className="block font-thin text-rose-700">
                                 registry from any store.
-                            </h2>
+                            </h3></div>
                         </h1>
 
                         <p className="mt-4 max-w-lg sm:text-xl/relaxed">

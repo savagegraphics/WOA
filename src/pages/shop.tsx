@@ -4,6 +4,9 @@ import Navie from '../components/Navie'
 import 'tailwindcss/tailwind.css';
 import Wall from '../shop/Wall'
 import LPage from '../shop/LPage'
+import AHero from '../components/AHero'
+import Navbar from '../components/Navbar'
+
 
 
 
@@ -11,7 +14,8 @@ import LPage from '../shop/LPage'
 const shop = () => {
   return (
     <div className='overflow-hidden'>
-      <Navie />
+      <Navbar />
+      <AHero />
       <LPage />
       <Wall />
       <BottomNavigationComponent />

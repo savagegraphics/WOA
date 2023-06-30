@@ -6,6 +6,7 @@ import Wall from '../shop/Wall'
 import LPage from '../shop/LPage'
 import AHero from '../components/AHero'
 import Navbar from '../components/Navbar'
+import Gallery from '../shop/Gallery'
 
 
 
@@ -15,6 +16,7 @@ const shop = () => {
   return (
     <div className='overflow-hidden'>
       <Navbar />
+      <Gallery />
       <AHero />
       <LPage />
       <Wall />

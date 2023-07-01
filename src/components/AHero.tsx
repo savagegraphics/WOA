@@ -23,7 +23,7 @@ const Component = () => {
                         <div className="absolute z-50 bottom-32 md:bottom-10 right-0 transform translate-x-12 flex items-center text-center justify-center w-20 h-20 rounded-full bg-white group-hover:bg-green-200 text-purple group-hover:text-gray-light font-semibold cursor-pointer group-hover:scale-110 duration-300 select-none">Sign Up!</div>
                     </div>
                     <div className="md:w-1/2 hidden md:block bg-indigo-700">
-                        <Image src={fam} alt="mobile payment" className="h-full"
+                        <Image src="https://media.istockphoto.com/id/1225968768/photo/loving-pregnant-woman-holding-her-belly-while-posing-in-studio.jpg?s=612x612&w=0&k=20&c=Lh-ZJlHdB_Mjc_yog9V5-wduwuecld4B-yAXq2XaqSc=" alt="mobile payment" className="h-full"
                             width={400}
                             height={400} />
                     </div>

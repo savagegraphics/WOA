@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Card = () => {
     return (
-        <div className="flex-wrap items-center justify-center gap-8 mt-12 mb-12 text-left sm:flex">
+        <div className="bg-indigo-300 flex-wrap items-center justify-center gap-8 mb-12 pb-16 pt-10 text-left sm:flex">
             <div style={ { background: '#fff' } } className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 p-8 pl-12 mt-6 rounded-lg shadow-lg dark:bg-gray-800">
                 <p style={ { color: '#606C5D' } } className="text-[#6a1a447d] text-md dark:text-gray-300">
                     <span className="text-lg font-bold text-custom-D14D72">
@@ -32,7 +32,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div style={ { background: '#fff' } } className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-16 md:mt-20 lg:mt-24 p-8 pl-12 mt-6 rounded-lg shadow-lg dark:bg-gray-800">
+            <div style={ { background: '#fff' } } className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 sm:mt-12 md:mt-6 lg:mt-24 p-8 pl-12 mt-6 rounded-lg shadow-lg dark:bg-gray-800">
                 <p style={ { color: '#606C5D' } } className="text-[#6a1a447d] text-md dark:text-gray-300">
                     <span className="text-lg font-bold text-custom-D14D72">
                         “
@@ -56,7 +56,7 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div style={ { background: '#fff' } } className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 p-8 pl-12 mt-6 rounded-lg shadow-lg dark:bg-gray-800">
+            <div style={ { background: '#fff' } } className="w-full sm:w-1/2 sm:mb-8 md:mb-10 md:w-1/2 lg:w-1/4 p-8 pl-12 mt-6 rounded-lg shadow-lg dark:bg-gray-800">
                 <p style={ { color: '#606C5D' } } className="text-[#6a1a447d] text-md dark:text-gray-300">
                     <span className="text-lg font-bold text-custom-D14D72">
                         “

@@ -6,7 +6,7 @@ import profileImage from '../assets/gay.jpg'
 
 const CTA = () => {
     return (
-        <div style={ { backgroundColor: '#fff' } } className="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
+        <div style={ { backgroundColor: '#fff' } } className="p-8 bg-azure rounded-lg shadow dark:bg-gray-800">
             <p className="mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-200">
                 Personal Advice from Real People
             </p>
@@ -22,18 +22,15 @@ const CTA = () => {
                         </a>
                     </div>
                     <div className="text-center">
-                        <p className="text-l text-gray-800 dark:text-white">
+                        <p className="text-l text-gray-dark dark:text-white">
                             Amber
                         </p>
-                        <p className=" text-md font-light text-gray-500 dark:text-gray-200">
+                        <p className=" text-md font-light text-gray-light dark:text-gray-200">
                             Happiness Hero
                         </p>
-                        <p className="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400">
+                        <p className="max-w-xs py-4 font-light text-gray text-md dark:text-gray-400">
                             Our Happiness Hero are available via email or live chat. We can help you build your registry, assist your Gift Fivers with purchase, and more!
                         </p>
-                    </div>
-                    <div className="flex items-center justify-between pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
-
                     </div>
                 </div>
             </div>

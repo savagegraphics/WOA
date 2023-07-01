@@ -17,6 +17,7 @@ import Wall from '../shop/Wall'
 import CTAS from '../guides/CTAS'
 import CTASS from '../guides/CTASS'
 import Navbar from '../components/Navbar'
+import Gallery from '../shop/Gallery'
 
 
 const Home = () => {
@@ -31,6 +32,7 @@ const Home = () => {
       <CTAS />
       <CTASS />
       <Tailwind />
+      <Gallery />
       <AnewSix />
       <AnewTen />
       <Card />

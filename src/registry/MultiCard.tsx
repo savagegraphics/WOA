@@ -3,7 +3,7 @@ import Imagine from '../assets/fam5.jpg';
 
 const MultiCard = () => {
     return (
-        <main className="py-6 px-4 mt-8 sm:p-6 md:py-10 md:px-8">
+        <main className="bg-indigo-300 py-6 px-4 pt-8 sm:p-6 md:py-10 md:px-8">
             <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
                 <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
                     <h1 className="mt-1 text-lg font-semibold text-white sm:text-black md:text-2xl dark:sm:text-white">onto your baby registry from any store.</h1>

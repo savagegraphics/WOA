@@ -1,43 +1,116 @@
-import React from "react";
-import Image from "next/image";
-import Imageg1 from "../assets/fam6.jpg";
-import Imageg2 from "../assets/fam2.jpg";
-import Imageg from "../assets/fam4.jpg";
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Mui = () => {
     return (
-        <div style={ { background: '#fff', marginTop: ' 4rem', padding: '4px' } } className="bg-white dark:bg-gray-800  p-6 overflow-hidden relative lg:flex lg:items-center">
-            <div className="w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-                <h2 style={ { color: '#df3d91' } } className="text-3xl font-extrabold text-[#df3d91] dark:text-white sm:text-4xl">
-                    <span className="block">FREE Hello Baby Box</span>
-                </h2>
-                <p className="text-md mt-4 text-gray-400">
-                    The state of Utah in the united states is home to lots of beautiful National parks, Bryce national canion park ranks as three of the most magnificient &amp; awe inspiring.
-                </p>
-                <div className="lg:mt-0 lg:flex-shrink-0">
-                    <div className="mt-12 inline-flex rounded-md shadow">
-                        <button
-                            type="button"
-                            style={ { backgroundColor: '#85586F' } }
-                            className="py-2 px-4 hover:bg-white focus:ring-D14D72-500 focus:ring-offset-D14D72-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg"
-                        >
-                            Get started
-                        </button>
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="grid gap-10 lg:grid-cols-2">
+                <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
+                    <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
+                        <svg className="text-teal-900 bg-purple rounded w-7 h-7" viewBox="0 0 24 24">
+                            <polyline
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeMiterlimit="10"
+                                points="8,5 8,1 16,1 16,5"
+                                strokeLinejoin="round"
+                            />
+                            <polyline
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeMiterlimit="10"
+                                points="9,15 1,15 1,5 23,5 23,15 15,15"
+                                strokeLinejoin="round"
+                            />
+                            <polyline
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeMiterlimit="10"
+                                points="22,18 22,23 2,23 2,18"
+                                strokeLinejoin="round"
+                            />
+                            <rect
+                                x="9"
+                                y="13"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeMiterlimit="10"
+                                width="6"
+                                height="4"
+                                strokeLinejoin="round"
+                            />
+                        </svg>
                     </div>
-                    <p style={ { fontSize: '8px' } } className="pt-4 text-sm italic">
-                        Some <a className="underline text-custom-85586F" href="">restrictions apply</a>
-                    </p>
+                    <div className="max-w-xl mb-6">
+                        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-dark sm:text-4xl sm:leading-none">
+                            Let us handle
+                            <br className="hidden md:block" pr-2 />
+                            your next{ ' ' }
+                            <span className="inline-block text-deepPurple-400">
+                                destination
+                            </span>
+                        </h2>
+                        <p className="text-base text-gray-700 md:text-lg">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                            quae. explicabo.
+                        </p>
+                    </div>
+                    <div>
+                        <Link href="/"
+                            aria-label=""
+                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                        >
+                            Learn more
+                            <svg
+                                className="inline-block w-3 ml-2"
+                                fill="currentColor"
+                                viewBox="0 0 12 12"
+                            >
+                                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                            </svg>
+                        </Link>
+                    </div>
                 </div>
-            </div>
-            <div className="flex items-center gap-8 p-8 lg:p-24">
-                <Image src={ Imageg } className="w-1/2 rounded-lg" alt="Tree" />
-                <div>
-                    <Image src={ Imageg1 } className="mb-8 rounded-lg" alt="Tree" />
-                    <Image src={ Imageg2 } className="rounded-lg" alt="Tree" />
+                <div className="flex items-center justify-center -mx-4 lg:pl-8">
+                    <div className="flex flex-col items-end px-3">
+                        <Image
+                            className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
+                            src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            alt=""
+                            width={ 1260 }
+                            height={ 750 }
+                        />
+                        <Image
+                            className="object-cover w-20 h-20 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
+                            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                            alt=""
+                            width={ 1260 }
+                            height={ 750 }
+                        />
+                    </div>
+                    <div className="px-3">
+                        <Image
+                            className="object-cover w-40 h-40 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
+                            src="https://images.pexels.com/photos/3182739/pexels-photo-3182739.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                            alt=""
+                            width={ 500 }
+                            height={ 750 }
+                        />
+                    </div>
                 </div>
             </div>
         </div>
     );
 };
 
-export default Mui;
+
+export default Mui

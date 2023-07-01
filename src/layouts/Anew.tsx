@@ -1,5 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import Imag from '../assets/fam1.jpg'
+import Imageg1 from "../assets/fam6.jpg";
+import Imageg2 from "../assets/fam2.jpg";
+import Imageg from "../assets/fam4.jpg";
+
 
 const Header = () => {
     return (
@@ -15,7 +20,7 @@ const Header = () => {
                 </svg>
                 <Image
                     className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-                    src="https://media.istockphoto.com/id/1225967990/photo/pregnant-woman-beaming-with-joy-holds-ultrasound-scan-in-front-of-round-belly.jpg?s=612x612&w=0&k=20&c=W4q1QOWQyROZ-KJ9y724tF22kvRcVSUUwTLaPDPmQIQ="
+                    src={Imageg1}
                     alt=""
                     width={1260}
                     height={750}

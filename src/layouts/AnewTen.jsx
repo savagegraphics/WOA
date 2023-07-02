@@ -1,67 +1,100 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import Reactimg from 'react';
+import Image from 'next/image'
+import Link from 'next/link'
 
-const AnewTen = () => {
+const Header = () => {
     return (
-        <div style={ { marginTop: '6rem' } } className="px-4 py-16 mx-auto sm:max-w-xl sm:mt-8 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border border-gray-light rounded shadow-sm lg:flex-row sm:mx-auto">
-                <div className="relative lg:w-1/2">
-                    <Image
-                        src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt=""
-                        className="object-cover w-full lg:absolute h-80 lg:h-full"
-                        width={ 1260 }
-                        height={ 750 }
-                    />
-                    <svg
-                        className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
-                        viewBox="0 0 20 104"
-                        fill="currentColor"
-                    >
-                        <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104" />
-                    </svg>
-                </div>
-                <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
-                    <div>
-                        <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                            Brand new
+        <div className="bg-indigo-200 lg:mt-4 lg:mb-4 rounded px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="flex flex-col items-center justify-between lg:flex-row">
+                <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
+                    <div className="max-w-xl mb-6">
+                        <div>
+                            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+                                PUT ANYTHING
+                            </p>
+                        </div>
+                        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                            Onto your baby
+                            <br className="hidden md:block" />
+                            registry from{ ' ' }
+                            <span className="inline-block text-deepPurple-400">
+                                any store
+                            </span>
+                        </h2>
+                        <p className="text-base text-gray-dark md:text-lg">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                            quae. explicabo.
                         </p>
                     </div>
-                    <h5 className="mb-3 text-3xl font-extrabold leading-none sm:text-4xl">
-                        Your new ideal style
-                    </h5>
-                    <p className="mb-5 text-gray-800">
-                        <span className="font-bold">Lorem ipsum</span> dolor sit amet,
-                        consectetur adipiscing elit. Etiam sem neque, molestie sit amet
-                        venenatis et, dignissim ut erat. Sed aliquet velit id dui eleifend,
-                        sed consequat odio sollicitudin.
-                    </p>
-                    <div className="flex items-center">
-                        <button
-                            type="submit"
-                            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                            style={ { backgroundColor: 'deeppink' } }
+                    <div className="flex flex-col items-center md:flex-row">
+                        <Link
+                            href="/"
+                            className="inline-flex items-center justify-center w-full h-12 px-6 mb-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto md:mr-4 md:mb-0 bg-deepPurple-400 hover:bg-deep-Purple-700 focus:shadow-outline focus:outline-none"
                         >
-                            Get started
-                        </button>
-                        <Link href="/" passHref aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                        >
-                            Learn More
+                            <span className="mr-3">Start Shopping</span>
                             <svg
-                                className="inline-block w-3 ml-2"
-                                fill="currentColor"
-                                viewBox="0 0 12 12"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                className="w-4"
                             >
-                                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                                <polyline
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeMiterlimit="10"
+                                    points="4,4 22,4 19,14 4,14 "
+                                />
+                                <circle
+                                    cx="4"
+                                    cy="22"
+                                    r="2"
+                                    strokeLinejoin="miter"
+                                    strokeLinecap="square"
+                                    stroke="none"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="20"
+                                    cy="22"
+                                    r="2"
+                                    strokeLinejoin="miter"
+                                    strokeLinecap="square"
+                                    stroke="none"
+                                    fill="currentColor"
+                                />
+                                <polyline
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeMiterlimit="10"
+                                    points="1,1 4,4 4,14 2,18 23,18 "
+                                />
                             </svg>
+                        </Link>
+                        <Link
+                            href="/"
+                            aria-label=""
+                            className="inline-flex items-center font-semibold text-indigo-400 transition-colors duration-200 hover:text-deepPurple-700"
+                        >
+                            Get 15% discount
                         </Link>
                     </div>
                 </div>
+                <div className="relative lg:w-1/2">
+                    <Image
+                        className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                        src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+                        alt=""
+                        width={ 500 }
+                        height={ 500 }
+                    />
+                </div>
             </div>
-        </div >
+        </div>
     );
 };
 
-export default AnewTen;
+export default Header;

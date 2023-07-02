@@ -1,9 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Imag from '../assets/fam1.jpg'
-import Imageg1 from "../assets/fam6.jpg";
-import Imageg2 from "../assets/fam2.jpg";
-import Imageg from "../assets/fam4.jpg";
+import Imageg1 from '../assets/fam6.jpg';
 
 
 const Header = () => {

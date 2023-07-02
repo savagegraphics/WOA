@@ -7,6 +7,7 @@ import LPage from '../shop/LPage'
 import AHero from '../components/AHero'
 import Navbar from '../components/Navbar'
 import Gallerious from '../shop/Gaallery'
+import Hero from '../components/Hero'
 
 
 
@@ -16,6 +17,7 @@ const shop = () => {
   return (
     <div className='overflow-hidden'>
       <Navbar />
+      <Hero />
       <Gallerious />
       <AHero />
       <LPage />

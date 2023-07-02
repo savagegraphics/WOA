@@ -9,7 +9,6 @@ import Footer from '../components/Footer';
 import Tailwindtwo from '../components/Tailwindtwo';
 import Landpage from '../components/Landpage';
 import AnewSix from '../layouts/AnewSix';
-import AnewTen from '../layouts/AnewTen';
 import Anew from '../layouts/Anew'
 import Heros from '../components/Heros'
 import AAHero from '../components/AAHero'
@@ -18,6 +17,7 @@ import CTAS from '../guides/CTAS'
 import CTASS from '../guides/CTASS'
 import Navbar from '../components/Navbar'
 import Gallery from '../shop/Gallery'
+import Gallerious from '../shop/Gaallery'
 
 
 const Home = () => {
@@ -28,13 +28,13 @@ const Home = () => {
       <Anew />
       <Mui />
       <Heros />
-      <Wall />
       <CTAS />
       <CTASS />
+      <Gallerious />
       <Tailwind />
+      <Wall />
       <Gallery />
       <AnewSix />
-      <AnewTen />
       <Card />
       <Tailwindtwo />
       <Landpage />

@@ -1,49 +1,62 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
 
-const SectionComponent = () => {
+
+const Content = () => {
     return (
-        <section className="bg-gray-100 dark:bg-gray-800 mt-8 lg:py-12 lg:flex lg:justify-center">
-            <div className="overflow-hidden bg-white dark:bg-gray-900 lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
-                <div className="lg:w-1/2">
-                    <div
-                        className="h-64 bg-cover lg:h-full lg:float-right lg:w-2/3"
-                        style={{
-                            backgroundImage:
-                                "url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')",
-                            backgroundPosition: 'top',
-                        }}
-                    ></div>
-                </div>
-                <div className="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-1/2">
-                    <p className="text-sm leading-4 mb-6 font-medium sm:text-pink dark:sm:text-slate-400">
-                        15% DISCOUNT
-                    </p>
+        <div className="bg-indigo-400 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
 
-                    <h2 className="text-2xl font-semibold text-gray mb-4 dark:text-white md:text-3xl">
-                        15% completion discount to the
-                        <span className="text-indigo-500"> Babylist shop.</span>
-                    </h2>
-
-                    <p className="mt-4 text-gray-500 dark:text-gray-300">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                        modi reprehenderit vitae exercitationem aliquid dolores ullam
-                        temporibus enim expedita aperiam mollitia iure consectetur dicta
-                        tenetur, porro consequuntur saepe accusantium consequatur.
-                    </p>
-
-                    <div className="inline-flex w-full mt-6 sm:w-auto">
-                        <Link
-                            href="#"
-                            className="inline-flex items-center justify-center w-full px-6 py-2 text-sm text-white duration-300 bg-gray rounded-lg hover:bg-gray-dark focus:ring focus:ring-gray-light focus:ring-opacity-80"
-                        >
-                            Start Now
-                        </Link>
-                    </div>
-                </div>
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-dark sm:text-4xl md:mx-auto">
+                    Congratulations!
+                </h2>
+                <p className="text-base text-gray-light md:text-lg">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                </p>
             </div>
-        </section>
+            <div className="flex items-center mb-8 sm:justify-center">
+                <Link
+                    href="/"
+                    className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deepPurple-400 hover:bg-deepPurple-700 focus:shadow-outline focus:outline-none"
+                >
+                    Sign up
+                </Link>
+            </div>
+            <div className="grid max-w-screen-lg gap-8 row-gap-5 mb-8 sm:grid-cols-2 lg:grid-cols-4 sm:mx-auto">
+                <Image
+                    className="object-cover w-full h-56 rounded shadow-lg"
+                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt=""
+                    width={600}
+                    height={600}
+                />
+                <Image
+                    className="object-cover w-full h-56 rounded shadow-lg"
+                    src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt=""
+                    width={600}
+                    height={600}
+                />
+                <Image
+                    className="object-cover w-full h-56 rounded shadow-lg"
+                    src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+                    alt=""
+                    width={600}
+                    height={600}
+                />
+                <Image
+                    className="object-cover w-full h-56 rounded shadow-lg"
+                    src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt=""
+                    width={600}
+                    height={600}
+                />
+            </div>
+        </div>
     );
 };
 
-export default SectionComponent;
+export default Content;
+

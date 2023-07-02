@@ -4,13 +4,17 @@ import Link from 'next/link';
 
 const CTAS = () => {
     return (
-        <div style={{ marginTop: '6rem' }} className="px-4 py-16 mx-auto sm:max-w-xl sm:mt-8 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div
+            style={{ marginTop: '6rem' }}
+            className="px-4 py-16 mx-auto sm:max-w-xl sm:mt-8 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+        >
             <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border border-gray-light rounded shadow-sm lg:flex-row sm:mx-auto">
+                {/* Image Section */}
                 <div className="relative lg:w-1/2">
                     <Image
                         src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
                         alt=""
-                        className="object-cover w-full lg:absolute h-80 lg:h-full"
+                        className="object-cover w-full h-80 lg:h-full lg:absolute"
                         width={1260}
                         height={750}
                     />
@@ -22,6 +26,8 @@ const CTAS = () => {
                         <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104" />
                     </svg>
                 </div>
+
+                {/* Content Section */}
                 <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
                     <div>
                         <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
@@ -32,7 +38,9 @@ const CTAS = () => {
                         Personal and Meaningful
                     </h5>
                     <p className="mb-5 text-gray-800">
-                        Add meaningful <span className="font-bold text-indigo-purple-600">gifts</span> you can&apos;t buy in stores.
+                        Add meaningful{' '}
+                        <span className="font-bold text-indigo-purple-600">gifts</span> you
+                        can&apos;t buy in stores.
                     </p>
                     <div className="flex items-center">
                         <button
@@ -42,7 +50,10 @@ const CTAS = () => {
                         >
                             Get started
                         </button>
-                        <Link href="/" passHref aria-label=""
+                        <Link
+                            href="/"
+                            passHref
+                            aria-label=""
                             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
                             Learn More
@@ -57,7 +68,7 @@ const CTAS = () => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

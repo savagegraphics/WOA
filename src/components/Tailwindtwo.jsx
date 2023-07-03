@@ -5,9 +5,9 @@ export default function Example() {
     return (
         <div className="fixed top-0 left-0 w-full px-8 py-2 bg-gray-dark text-gray-light">
             <div className="flex items-center mx-auto container justify-center md:justify-between py-2">
-                <div>
-                    <span>Get up to 50% off your first order + free shipping,&nbsp;</span>
-                    <Link href="#" rel="noopener noreferrer" className="underline">sign up</Link> today!
+                <div className=''>
+                    <span>Get up to 50% off your first order, </span>
+                    <Link href="#" rel="noopener noreferrer" className="underline">sign up</Link> now!
                 </div>
                 <Link href="#" rel="noopener noreferrer" className="items-center gap-2 hidden md:flex">
                     <svg role="img" viewBox="0 0 22 22" className="fill-current h-4 w-4">

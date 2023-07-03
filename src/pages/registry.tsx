@@ -12,20 +12,23 @@ import CardtOne from '../registry/CardtOne';
 import MultiCard from '../registry/MultiCard';
 import Cardty from '../registry/Cardty';
 import CardtTwo from '../registry/CardtTwo';
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar';
+import AnewSix from '../layouts/AnewSix';
+import Tailwindtwo from '../components/Tailwindtwo';
 
 
 
 const registry = () => {
   return (
     <div className='overflow-hidden'>
+      <Tailwindtwo />
       <Navbar />
       <MultiCard />
       <CardtOne />
       <CardtTwo />
       <Cardt />
       <Cardty />
-      <Carding />
+      <AnewSix />
       <CTA />
       <Card />
       <Landpage />

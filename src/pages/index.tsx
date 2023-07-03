@@ -8,7 +8,6 @@ import Card from '../components/Card';
 import Footer from '../components/Footer';
 import Tailwindtwo from '../components/Tailwindtwo';
 import Landpage from '../components/Landpage';
-import AnewSix from '../layouts/AnewSix';
 import Anew from '../layouts/Anew'
 import Heros from '../components/Heros'
 import AAHero from '../components/AAHero'
@@ -29,7 +28,6 @@ const Home = () => {
       <Anew />
       <Mui />
       <Gallery />
-      <AnewSix />
       <Wall />
       <Tailwind />
       <CTASS />

@@ -7,12 +7,14 @@ import AnewEight from '../layouts/AnewEight';
 import AnewTen from '../layouts/AnewTen';
 import Navv from '../components/Navv'
 import Navbar from '../components/Navbar'
+import Tailwindtwo from '../components/Tailwindtwo';
 
 
 
 const About = () => {
   return (
     <div className="overflow-hidden">
+      <Tailwindtwo />
       <Navbar />
       <AnewTen />
       <AnewEight />

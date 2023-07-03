@@ -9,6 +9,7 @@ import Gallerious from '../shop/Gaallery'
 import Hero from '../components/Hero'
 import Tailwindy from '../components/Tailwindy';
 import CardStyle from '../components/CardStyle1';
+import Tailwindtwo from '../components/Tailwindtwo';
 
 
 
@@ -17,6 +18,7 @@ const shop = () => {
 
   return (
     <div className='overflow-hidden'>
+      <Tailwindtwo />
       <Navbar />
       {/* <Hero /> */}
       <Tailwindy />

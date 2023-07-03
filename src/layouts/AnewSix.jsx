@@ -1,73 +1,55 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link'
 
 const AnewSix = () => {
     return (
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div className="grid max-w-screen-lg gap-8 row-gap-5 md:row-gap-8 sm:mx-auto lg:grid-cols-2">
-                <div
-                    style={ { backgroundColor: '#fff' } }
-                    className="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center"
-                >
-                    <div className="relative h-64 lg:h-80 xl:h-96">
-                        <Image
-                            className="object-cover w-full h-full rounded-t"
-                            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                            alt=""
-                            width={ 1260 }
-                            height={ 750 }
-                        />
-                        <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
-                    </div>
-                    <div className="px-6 py-8 border border-gray-light border-t-0 rounded-b sm:px-8">
-                        <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
-                            Our Team
-                        </h5>
-                        <p className="mb-5 text-gray-700">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut
-                            perspiciatis unde.
-                        </p>
-                        <button
-                            type="submit"
-                            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                            style={ { backgroundColor: 'deeppink' } }
-                        >
-                            Read more
-                        </button>
-                    </div>
+        <section className="bg-white dark:bg-gray-900">
+            <div className="container px-6 py-10 mx-auto">
+                <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+                    What clients saying
+                </h1>
+
+                <div className="flex justify-center mx-auto mt-6">
+                    <span className="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+                    <span className="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                    <span className="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
                 </div>
-                <div className="transition duration-300 transform bg-white rounded shadow-sm hover:-translate-y-1 hover:shadow md:text-center">
-                    <div className="relative h-64 lg:h-80 xl:h-96">
-                        <Image
-                            className="object-cover w-full h-full rounded-t"
-                            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                            alt=""
-                            width={ 1260 }
-                            height={ 750 }
-                        />
-                        <div className="absolute inset-0 bg-gray-800 bg-opacity-25" />
-                    </div>
-                    <div className="px-6 py-8 border border-gray-light border-t-0 rounded-b sm:px-8">
-                        <h5 className="mb-2 text-xl font-bold leading-none sm:text-2xl">
-                            Hire Us
-                        </h5>
-                        <p className="mb-5 text-gray-700">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut
-                            perspiciatis unde.
+
+                <div className="flex items-start max-w-6xl mx-auto mt-16">
+                    <button title="left arrow" className="hidden p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:block hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <div>
+                        <p className="flex items-center text-center text-gray-500 lg:mx-8">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quam. Odio voluptatem officiis
+                            eos illo! Pariatur, totam alias. Beatae accusamus earum quos obcaecati minima molestias. Possimus
+                            minima dolores itaque! Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates
+                            fugiat corrupti laudantium dolores reiciendis pariatur esse quod nihil quia cupiditate debitis
+                            quisquam nemo, accusamus animi explicabo? Architecto, unde laboriosam?
                         </p>
-                        <button
-                            type="submit"
-                            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                            style={ { backgroundColor: 'deeppink' } }
-                        >
-                            Read more
-                        </button>
+
+                        <div className="flex flex-col items-center justify-center mt-8">
+                            <Image className="object-cover rounded-full w-14 h-14" src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" width={ 200 } height={ 100 } />
+
+                            <div className="mt-4 text-center">
+                                <h1 className="font-semibold text-gray-800 dark:text-white">Mia Brown</h1>
+                                <span className="text-sm text-gray-500 dark:text-gray-400">Marketer</span>
+                            </div>
+                        </div>
                     </div>
+
+                    <button title="right arrow" className="hidden p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 lg:block hover:bg-gray-100">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

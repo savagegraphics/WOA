@@ -23,17 +23,17 @@ import Gallerious from '../shop/Gaallery'
 const Home = () => {
   return (
     <div className='overflow-hidden'>
+      <Tailwindtwo />
       <Navbar />
       {/* <AAHero /> */}
       <Anew />
       <Mui />
-      <Tailwindtwo />
       <Gallery />
       <CTASS />
       <AnewSix />
       <Wall />
-      <Heros />
       <Tailwind />
+      <Heros />
       <Gallerious />
       <Card />
       <CTAS />

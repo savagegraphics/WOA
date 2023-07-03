@@ -27,8 +27,8 @@ const Home = () => {
       {/* <AAHero /> */}
       <Anew />
       <Mui />
+      <Tailwindtwo />
       <Gallery />
-      <CTAS />
       <CTASS />
       <AnewSix />
       <Wall />
@@ -36,7 +36,7 @@ const Home = () => {
       <Tailwind />
       <Gallerious />
       <Card />
-      <Tailwindtwo />
+      <CTAS />
       <Landpage />
       <Footer />
       <BottomNavigationComponent />

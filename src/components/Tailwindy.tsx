@@ -11,7 +11,7 @@ const Hero = () => {
                         <div className="w-full px-4 lg:w-5/12">
                             <div className="hero-content">
                                 <h1 className="mb-3 text-4xl font-bold leading-snug text-dark sm:text-[42px] lg:text-[40px] xl:text-[42px]">
-                                    Kickstart Startup <br /> Website with TailGrids
+                                    Put Anything <br /> onto your babylist <br /> from any store
                                 </h1>
                                 <p className="mb-8 max-w-[480px] pr-6 pb-6 pt-6 text-base text-body-color">
                                     With TailGrids, business and students thrive together.
@@ -77,7 +77,7 @@ const Hero = () => {
                         <div className="hidden px-0 lg:block lg:w-1/12"></div>
                         <div className="w-full px-0 lg:w-6/12">
                             <div className="lg:ml-auto lg:text-right">
-                                <div className="relative z-10 inline-block pt-11 lg:pt-0">
+                                <div className="relative z-10 inline-block pt-6 lg:pt-0">
                                     <Image
                                         src="https://cdn.tailgrids.com/1.0/assets/images/hero/hero-image-01.png"
                                         alt="hero"

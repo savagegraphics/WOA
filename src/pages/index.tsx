@@ -27,14 +27,14 @@ const Home = () => {
       {/* <AAHero /> */}
       <Anew />
       <Mui />
-      <Heros />
+      <Gallery />
       <CTAS />
       <CTASS />
-      <Gallerious />
-      <Tailwind />
-      <Wall />
-      <Gallery />
       <AnewSix />
+      <Wall />
+      <Heros />
+      <Tailwind />
+      <Gallerious />
       <Card />
       <Tailwindtwo />
       <Landpage />

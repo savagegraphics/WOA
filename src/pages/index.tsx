@@ -29,10 +29,10 @@ const Home = () => {
       <Anew />
       <Mui />
       <Gallery />
-      <CTASS />
       <AnewSix />
       <Wall />
       <Tailwind />
+      <CTASS />
       <Heros />
       <Gallerious />
       <Card />

@@ -4,71 +4,20 @@ import Link from 'next/link';
 
 const CTAS = () => {
     return (
-        <div
-            style={{ marginTop: '6rem' }}
-            className="px-4 py-16 mx-auto sm:max-w-xl sm:mt-8 md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
-        >
-            <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border border-gray-light rounded shadow-sm lg:flex-row sm:mx-auto">
-                {/* Image Section */}
-                <div className="relative lg:w-1/2">
-                    <Image
-                        src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                        alt=""
-                        className="object-cover w-full h-80 lg:h-full lg:absolute"
-                        width={1260}
-                        height={750}
-                    />
-                    <svg
-                        className="absolute top-0 right-0 hidden h-full text-white lg:inline-block"
-                        viewBox="0 0 20 104"
-                        fill="currentColor"
-                    >
-                        <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104" />
-                    </svg>
-                </div>
-
-                {/* Content Section */}
-                <div className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-1/2">
-                    <div>
-                        <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                            Brand new
-                        </p>
-                    </div>
-                    <h5 className="mb-3 text-3xl text-purple font-extrabold leading-none sm:text-4xl">
-                        Personal and Meaningful
-                    </h5>
-                    <p className="mb-5 text-gray-800">
-                        Add meaningful{' '}
-                        <span className="font-bold text-indigo-purple-600">gifts</span> you
-                        can&apos;t buy in stores.
-                    </p>
-                    <div className="flex items-center">
-                        <button
-                            type="submit"
-                            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                            style={{ backgroundColor: 'deeppink' }}
-                        >
-                            Get started
-                        </button>
-                        <Link
-                            href="/"
-                            passHref
-                            aria-label=""
-                            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                        >
-                            Learn More
-                            <svg
-                                className="inline-block w-3 ml-2"
-                                fill="currentColor"
-                                viewBox="0 0 12 12"
-                            >
-                                <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                            </svg>
-                        </Link>
-                    </div>
-                </div>
+        <section className="py-6 dark:bg-gray-800 dark:text-gray-50">
+            <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
+                <Image src="https://source.unsplash.com/random/301x301/" alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-3 md:row-start-1 dark:bg-gray-500 aspect-square" width={600} height={400} />
+                <Image alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?0" width={600} height={400} />
+                <Image alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?1" width={600} height={400} />
+                <Image alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?2" width={600} height={400} />
+                <Image alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?3" width={600} height={400} />
+                <Image alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?4" width={600} height={400} />
+                <Image alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?5" width={600} height={400} />
+                <Image alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?6" width={600} height={400} />
+                <Image alt="" className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square" src="https://source.unsplash.com/random/200x200/?7" width={600} height={400} />
+                <Image src="https://source.unsplash.com/random/302x302/" alt="" className="w-full h-full col-span-2 row-span-2 rounded shadow-sm min-h-96 md:col-start-1 md:row-start-3 dark:bg-gray-500 aspect-square" width={600} height={400} />
             </div>
-        </div>
+        </section>
     );
 };
 

@@ -11,12 +11,12 @@ const Header = () => {
                             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider uppercase bg-teal-accent-400 text-teal-900 rounded-full">Brand new</p>
                         </div>
                         <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w-lg mb-6">
-                            Everything you
+                            Use Babylist
                             <br className="hidden md:block" />
-                            can imagine{' '}
-                            <span className="inline-block text-deep-purple-accent-400">is real</span>
+                            on all your{' '}
+                            <span className="inline-block text-deep-purple-accent-400"> devices.</span>
                         </h2>
-                        <p className="text-gray-700 text-base md:text-lg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.</p>
+                        <p className="text-gray-700 text-base md:text-lg">Get started from the comfort of your own home. Prefer using your mobile device to surf the interwebs? Use our free iPhone, iPad, and Android apps!</p>
                     </div>
                     <div className="flex items-center space-x-3">
                         <Link href="/" className="w-32 transition duration-300 hover:shadow-lg">

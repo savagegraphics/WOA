@@ -4,7 +4,11 @@ import Link from 'next/link';
 
 const CTAS = () => {
     return (
-        <div className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
+        <div
+            style={{
+                backgroundImage:
+                    'url("https://browsecat.art/sites/default/files/spring-color-background-129145-1112746-6858151.png")', backgroundSize: 'cover',
+            }} className="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl">
             <div>
                 <h2 className="text-3xl font-bold tracki text-center sm:text-5xl dark:text-gray-50">Aliquip definiebas ad est</h2>
                 <p className="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-400">Quando cetero his ne, eum admodum sapientem ut.</p>
@@ -58,7 +62,7 @@ const CTAS = () => {
                     </div>
                 </div>
                 <div aria-hidden="true" className="mt-10 lg:mt-0">
-                    <img src="https://source.unsplash.com/random/360x480" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
+                    <img src="https://images.babylist.com/image/upload/f_auto,q_auto,w_960/v1634258832/babylist-couple_hunoqz.png" alt="" className="mx-auto rounded-lg shadow-lg dark:bg-gray-500" />
                 </div>
             </div>
             <div>

@@ -15,7 +15,7 @@ import CardtTwo from '../registry/CardtTwo';
 import Navbar from '../components/Navbar';
 import AnewSix from '../layouts/AnewSix';
 import Tailwindtwo from '../components/Tailwindtwo';
-
+import Gallerious from '../shop/Gaallery'
 
 
 const registry = () => {
@@ -29,6 +29,7 @@ const registry = () => {
       <Cardt />
       <Cardty />
       <AnewSix />
+      <Gallerious />
       <CTA />
       <Card />
       <Landpage />

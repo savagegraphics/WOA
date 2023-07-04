@@ -25,7 +25,7 @@ function classNames(...classes: string[]): string {
 
 export default function Example() {
     return (
-        <Disclosure as="nav" className="bg-indigo-300">
+        <Disclosure as="nav" className="bg-indigo-200">
             {({ open }) => (
                 <>
                     <div className="mx-auto max-w-7xl px-2 mt-14 sm:px-6 lg:px-8">

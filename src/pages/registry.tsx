@@ -3,8 +3,8 @@ import 'tailwindcss/tailwind.css';
 import BottomNavigationComponent from '../components/BottomNavigationComponent';
 import Navie from '../components/Navie'
 import Footer from '../components/Footer';
-import CTA from '../registry/CTA';
 import Landpage from '../components/Landpage';
+import CTA from '../registry/CTA';
 import Card from '../components/Card';
 import Carding from '../registry/Carding';
 import Cardt from '../registry/Cardt';
@@ -16,6 +16,7 @@ import Navbar from '../components/Navbar';
 import AnewSix from '../layouts/AnewSix';
 import Tailwindtwo from '../components/Tailwindtwo';
 import Gallerious from '../shop/Gaallery'
+import CTASS from '../guides/CTASS'
 
 
 const registry = () => {
@@ -28,9 +29,8 @@ const registry = () => {
       <CardtTwo />
       <Cardt />
       <Cardty />
-      <AnewSix />
+      <CTASS />
       <Gallerious />
-      <CTA />
       <Card />
       <Landpage />
       <Footer />

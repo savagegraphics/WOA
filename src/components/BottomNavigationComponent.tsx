@@ -1,12 +1,12 @@
-"use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { BottomNavigation, BottomNavigationAction } from '@mui/material';
-import { Home as HomeIcon, Info as InfoIcon } from '@mui/icons-material';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import HomeIcon from '@mui/icons-material/Home';
+import DescriptionIcon from '@mui/icons-material/Description';
 import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import DescriptionIcon from '@mui/icons-material/Description';
 
 const BottomNavigationComponent = () => {
   const router = useRouter();
@@ -17,14 +17,19 @@ const BottomNavigationComponent = () => {
     router.push(newValue);
   };
 
+
   return (
-    <BottomNavigation value={activeTab} onChange={handleTabChange} style={{
-      position: 'fixed',
-      left: 0,
-      bottom: 0,
-      width: '100%',
-      zIndex: 9999, // Adjust the z-index value if needed
-    }}>
+    <BottomNavigation
+      value={activeTab}
+      onChange={handleTabChange}
+      style={{
+        position: 'fixed',
+        left: 0,
+        bottom: 0,
+        width: '100%',
+        zIndex: 9999, // Adjust the z-index value if needed
+      }}
+    >
       <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />
       <BottomNavigationAction label="Registry" value="/registry" icon={<DescriptionIcon />} />
       <BottomNavigationAction label="Guides" value="/guides" icon={<AppRegistrationIcon />} />
@@ -32,6 +37,5 @@ const BottomNavigationComponent = () => {
     </BottomNavigation>
   );
 };
-
 
 export default BottomNavigationComponent;

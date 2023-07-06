@@ -8,6 +8,8 @@ import AnewTen from '../layouts/AnewTen';
 import Navv from '../components/Navv'
 import Navbar from '../components/Navbar'
 import Tailwindtwo from '../components/Tailwindtwo';
+import Tailwind from '../components/Tailwind';
+import Heros from '../components/Heros'
 
 
 
@@ -17,6 +19,8 @@ const About = () => {
       <Tailwindtwo />
       <Navbar />
       <AnewTen />
+      <Tailwind />
+      <Heros />
       <AnewEight />
       <BottomNavigationComponent />
     </div>

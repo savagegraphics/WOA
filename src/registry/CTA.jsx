@@ -4,60 +4,30 @@ import Link from 'next/link'
 
 const CTA = () => {
     return (
-        <div className="dark:bg-gray-800 dark:text-gray-50">
-            <div className="container grid grid-cols-12 mx-auto">
-                <div
-                    className="flex flex-col justify-center col-span-12 align-middle bg-no-repeat bg-cover dark:bg-gray-700 lg:col-span-6 lg:h-auto"
-                    style={ {
-                        backgroundImage: "url('https://source.unsplash.com/random/640x480')",
-                        backgroundPosition: 'center center',
-                        backgroundBlendMode: 'multiply',
-                        backgroundSize: 'cover'
-                    } }
-                >
-                    <div className="flex flex-col items-center p-8 py-12 text-center">
-                        <span>12 June</span>
-                        <h1 className="py-4 text-5xl font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
-                        <p className="pb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-7 h-7">
-                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                        </svg>
-                    </div>
+        <div class="bg-white dark:bg-gray-900">
+            <div class="container grid grid-cols-1 gap-8 px-4 py-12 mx-auto lg:grid-cols-2">
+                <div class="flex flex-col items-center max-w-lg mx-auto text-center">
+                    <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
+                        Web development
+                    </h2>
+
+                    <p class="mt-3 text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex cupiditate corrupti aliquam eum vel consequuntur hic culpa unde natus officia enim est impedit consequatur aut, voluptatem minima repellat non!</p>
+
+                    <Link href="#" class="inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-white transition-colors duration-300 bg-blue-600 rounded-lg sm:w-auto hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                        Start now
+                    </Link>
                 </div>
-                <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 divide-gray-700">
-                    <div className="pt-6 pb-4 space-y-2">
-                        <span>12 June</span>
-                        <h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                        <Link rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400">
-                            <span>Read more</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                            </svg>
-                        </Link>
-                    </div>
-                    <div className="pt-6 pb-4 space-y-2">
-                        <span>12 June</span>
-                        <h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                        <Link rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400">
-                            <span>Read more</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                            </svg>
-                        </Link>
-                    </div>
-                    <div className="pt-6 pb-4 space-y-2">
-                        <span>12 June</span>
-                        <h1 className="text-3xl font-bold">Lorem ipsum dolor sit.</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, a!</p>
-                        <Link rel="noopener noreferrer" href="#" className="inline-flex items-center py-2 space-x-2 text-sm dark:text-violet-400">
-                            <span>Read more</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
-                                <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                            </svg>
-                        </Link>
-                    </div>
+
+                <div class="flex flex-col items-center max-w-lg mx-auto text-center">
+                    <h2 class="text-3xl font-semibold tracking-tight text-gray-800 dark:text-white">
+                        App development
+                    </h2>
+
+                    <p class="mt-3 text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex cupiditate corrupti aliquam eum vel consequuntur hic culpa unde natus officia enim est impedit consequatur aut, voluptatem minima repellat non!</p>
+
+                    <Link href="#" class="inline-flex items-center justify-center w-full px-5 py-2 mt-6 text-gray-700 transition-colors duration-300 transform bg-white border border-gray-200 rounded-lg dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:text-white sm:w-auto dark:hover:bg-gray-800 dark:ring-gray-700 focus:ring focus:ring-gray-200 focus:ring-opacity-80">
+                        Start now
+                    </Link>
                 </div>
             </div>
         </div>

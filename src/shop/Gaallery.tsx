@@ -11,7 +11,7 @@ const Header = () => {
                             <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider uppercase bg-teal-accent-400 text-teal-900 rounded-full">Brand new</p>
                         </div>
                         <h2 className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none max-w-lg mb-6">
-                            Use Babylist
+                            Use Babylist {' '}
                             <br className="hidden md:block" />
                             on all your{' '}
                             <span className="inline-block text-deep-purple-accent-400"> devices.</span>
@@ -29,10 +29,10 @@ const Header = () => {
                 </div>
                 <div className="flex items-center justify-center lg:w-1/2">
                     <div className="w-2/5">
-                        <Image src="https://kitwind.io/assets/kometa/one-girl-phone.png" className="object-cover" alt="" width={600} height={600} />
+                        <Image src="https://images.babylist.com/image/upload/q_auto,f_auto,w_800/v1634334378/babylist-app-screenshot_els800.png" className="object-cover" alt="" width={600} height={600} />
                     </div>
                     <div className="w-5/12 -ml-16 lg:-ml-32">
-                        <Image src="https://kitwind.io/assets/kometa/two-girls-phone.png" className="object-cover" alt="" width={600} height={600} />
+                        <Image src="https://images.babylist.com/image/upload/q_auto,f_auto,w_800/v1634334378/babylist-app-screenshot_els800.png" className="object-cover" alt="" width={600} height={600} />
                     </div>
                 </div>
             </div>

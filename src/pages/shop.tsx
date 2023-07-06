@@ -10,6 +10,8 @@ import Hero from '../components/Hero'
 import Tailwindy from '../components/Tailwindy';
 import CardStyle from '../components/CardStyle1';
 import Tailwindtwo from '../components/Tailwindtwo';
+import Footer from '../components/Footer';
+import Landpage from '../components/Landpage';
 
 
 
@@ -26,6 +28,8 @@ const shop = () => {
       <Gallerious />
       <AHero />
       <Wall />
+      <Landpage />
+      <Footer />
       <BottomNavigationComponent />
     </div>
   )

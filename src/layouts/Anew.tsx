@@ -17,7 +17,7 @@ const Header = () => {
                 </svg>
                 <Image
                     className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-                    src={Imageg1}
+                    src="https://media.istockphoto.com/id/1225966175/photo/pregnant-woman-with-9-months-of-exciting-expectations-behind-holds-her-tummy.jpg?s=612x612&w=0&k=20&c=q9f4aqmMWTM3qBzASSKcrGDna-ziJ-vghjKtA9_LNOc="
                     alt=""
                     width={1260}
                     height={750}

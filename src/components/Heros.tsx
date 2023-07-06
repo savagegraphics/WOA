@@ -1,44 +1,130 @@
 import React from 'react'
+import './Heros.css'
 
 const Heros = () => {
     return (
-        <div className="container flex flex-wrap justify-center">
-            <div className="mx-auto mt-11 w-80 transform sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
-                <img className="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image" />
-                <div className="p-4">
-                    <h2 className="mb-2 text-lg font-medium dark:text-white text-gray-900">Product Name</h2>
-                    <p className="mb-2 text-base dark:text-gray-300 text-gray-700">Product description goes here.</p>
-                    <div className="flex items-center">
-                        <p className="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$20.00</p>
-                        <p className="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$25.00</p>
-                        <p className="ml-auto text-base font-medium text-green-500">20% off</p>
+        <div className="card-container">
+            <div className="card">
+                <div className="max-w-sm">
+                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" />
+                        <div className="py-6 px-8 rounded-lg bg-white">
+                            <h1 className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">I'm supper dog for you.</h1>
+                            <p className="text-gray-700 tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, labore. Ea debitis beatae sequi deleniti.</p>
+                            <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">Buy Now</button>
+                        </div>
+                        <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
+                            <span className="text-md">$150</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="mx-auto mt-11 w-80 transform sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
-                <img className="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image" />
-                <div className="p-4">
-                    <h2 className="mb-2 text-lg font-medium dark:text-white text-gray-900">Product Name</h2>
-                    <p className="mb-2 text-base dark:text-gray-300 text-gray-700">Product description goes here.</p>
-                    <div className="flex items-center">
-                        <p className="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$20.00</p>
-                        <p className="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$25.00</p>
-                        <p className="ml-auto text-base font-medium text-green-500">20% off</p>
+            <div className="card">
+                <div className="max-w-sm">
+                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" />
+                        <div className="py-6 px-8 rounded-lg bg-white">
+                            <h1 className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">I'm supper dog for you.</h1>
+                            <p className="text-gray-700 tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, labore. Ea debitis beatae sequi deleniti.</p>
+                            <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">Buy Now</button>
+                        </div>
+                        <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
+                            <span className="text-md">$150</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="mx-auto mt-11 w-80 transform sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 overflow-hidden rounded-lg bg-white dark:bg-slate-800 shadow-md duration-300 hover:scale-105 hover:shadow-lg">
-                <img className="h-48 w-full object-cover object-center" src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Product Image" />
-                <div className="p-4">
-                    <h2 className="mb-2 text-lg font-medium dark:text-white text-gray-900">Product Name</h2>
-                    <p className="mb-2 text-base dark:text-gray-300 text-gray-700">Product description goes here.</p>
-                    <div className="flex items-center">
-                        <p className="mr-2 text-lg font-semibold text-gray-900 dark:text-white">$20.00</p>
-                        <p className="text-base  font-medium text-gray-500 line-through dark:text-gray-300">$25.00</p>
-                        <p className="ml-auto text-base font-medium text-green-500">20% off</p>
+            <div className="card">
+                <div className="max-w-sm">
+                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" />
+                        <div className="py-6 px-8 rounded-lg bg-white">
+                            <h1 className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">I'm supper dog for you.</h1>
+                            <p className="text-gray-700 tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, labore. Ea debitis beatae sequi deleniti.</p>
+                            <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">Buy Now</button>
+                        </div>
+                        <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
+                            <span className="text-md">$150</span>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div className="card">
+                <div className="max-w-sm">
+                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" />
+                        <div className="py-6 px-8 rounded-lg bg-white">
+                            <h1 className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">I'm supper dog for you.</h1>
+                            <p className="text-gray-700 tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, labore. Ea debitis beatae sequi deleniti.</p>
+                            <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">Buy Now</button>
+                        </div>
+                        <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
+                            <span className="text-md">$150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="max-w-sm">
+                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" />
+                        <div className="py-6 px-8 rounded-lg bg-white">
+                            <h1 className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">I'm supper dog for you.</h1>
+                            <p className="text-gray-700 tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, labore. Ea debitis beatae sequi deleniti.</p>
+                            <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">Buy Now</button>
+                        </div>
+                        <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
+                            <span className="text-md">$150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="max-w-sm">
+                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" />
+                        <div className="py-6 px-8 rounded-lg bg-white">
+                            <h1 className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">I'm supper dog for you.</h1>
+                            <p className="text-gray-700 tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, labore. Ea debitis beatae sequi deleniti.</p>
+                            <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">Buy Now</button>
+                        </div>
+                        <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
+                            <span className="text-md">$150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="max-w-sm">
+                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" />
+                        <div className="py-6 px-8 rounded-lg bg-white">
+                            <h1 className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">I'm supper dog for you.</h1>
+                            <p className="text-gray-700 tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, labore. Ea debitis beatae sequi deleniti.</p>
+                            <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">Buy Now</button>
+                        </div>
+                        <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
+                            <span className="text-md">$150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="card">
+                <div className="max-w-sm">
+                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
+                        <img className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" />
+                        <div className="py-6 px-8 rounded-lg bg-white">
+                            <h1 className="text-gray-700 font-bold text-2xl mb-3 hover:text-gray-900 hover:cursor-pointer">I'm supper dog for you.</h1>
+                            <p className="text-gray-700 tracking-wide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, labore. Ea debitis beatae sequi deleniti.</p>
+                            <button className="mt-6 py-2 px-4 bg-yellow-400 text-gray-800 font-bold rounded-lg shadow-md hover:shadow-lg transition duration-300">Buy Now</button>
+                        </div>
+                        <div className="absolute top-2 right-2 py-2 px-4 bg-white rounded-lg">
+                            <span className="text-md">$150</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }

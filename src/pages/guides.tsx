@@ -10,6 +10,9 @@ import Navbar from '../components/Navbar'
 import Tailwindtwo from '../components/Tailwindtwo';
 import Tailwind from '../components/Tailwind';
 import Heros from '../components/Heros'
+import AHero from '../components/AHero'
+import AAHero from '../components/AAHero';
+
 
 
 
@@ -20,6 +23,8 @@ const About = () => {
       <Navbar />
       <AnewTen />
       <Tailwind />
+      <AAHero />
+      <AHero />
       <Heros />
       <AnewEight />
       <BottomNavigationComponent />

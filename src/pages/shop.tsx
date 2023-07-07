@@ -26,7 +26,6 @@ const shop = () => {
       <Tailwindy />
       <CardStyle />
       <Gallerious />
-      <AHero />
       <Wall />
       <Landpage />
       <Footer />

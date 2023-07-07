@@ -23,7 +23,6 @@ const About = () => {
       <Navbar />
       <AnewTen />
       <Tailwind />
-      <AAHero />
       <AHero />
       <Heros />
       <AnewEight />

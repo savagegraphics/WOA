@@ -27,7 +27,7 @@ const BottomNavigationComponent = () => {
         left: 0,
         bottom: 0,
         width: '100%',
-        zIndex: 9999, // Adjust the z-index value if needed
+        zIndex: 999, // Adjust the z-index value if needed
       }}
     >
       <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />

@@ -8,9 +8,9 @@ import Link from 'next/link'
 
 const navigation = [
     { name: 'Dashboard', href: '#', current: true },
-    { name: 'Registry', href: '#', current: false },
-    { name: 'Guides', href: '#', current: false },
-    { name: 'Shop', href: '#', current: false },
+    { name: 'Registry', href: '/registry', current: false },
+    { name: 'Guides', href: '/guides', current: false },
+    { name: 'Shop', href: '/shop', current: false },
     { name: 'Sign Up', href: '#', current: false },
     { name: 'Help', href: '#', current: false },
     { name: 'Log In', href: '#', current: false },

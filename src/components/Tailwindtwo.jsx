@@ -3,7 +3,9 @@ import Link from 'next/link'
 
 export default function Example() {
     return (
-        <div className="fixed top-0 left-0 w-full px-8 py-2 bg-gray-dark text-gray-light">
+        <div style={ {
+            zIndex: 99999, // Adjust the z-index value if needed
+        } } className="fixed top-0 left-0 w-full px-8 py-2 bg-gray-dark text-gray-light">
             <div className="flex items-center mx-auto container justify-center md:justify-between py-2">
                 <div className=''>
                     <span>Get up to 50% off your first order, </span>

@@ -12,6 +12,7 @@ import CardStyle from '../components/CardStyle1';
 import Tailwindtwo from '../components/Tailwindtwo';
 import Footer from '../components/Footer';
 import Landpage from '../components/Landpage';
+import AnewTen from '../layouts/AnewTen';
 
 
 
@@ -23,10 +24,8 @@ const shop = () => {
       <Tailwindtwo />
       <Navbar />
       {/* <Hero /> */}
-      <Tailwindy />
+      <AnewTen />
       <CardStyle />
-      <Gallerious />
-      <Wall />
       <Landpage />
       <Footer />
       <BottomNavigationComponent />

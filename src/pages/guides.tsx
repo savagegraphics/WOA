@@ -17,6 +17,7 @@ import CTAS from '../guides/CTAS'
 import Landpage from '../components/Landpage';
 import Footer from '../components/Footer';
 import Heroes from '../components/Heroes'
+import CardStyle from '../components/CardStyle1';
 
 
 
@@ -26,6 +27,7 @@ const About = () => {
       <Tailwindtwo />
       <Navbar />
       <Heroes />
+      <CardStyle />
       <Tailwind />
       <AHero />
       <Heros />

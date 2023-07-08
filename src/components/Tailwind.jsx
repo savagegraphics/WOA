@@ -324,7 +324,7 @@ export default function Example() {
 
                             {/* Product grid */ }
                             <div className="lg:col-span-3 lg:ml-12">
-                                <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                     <div className="">
                                         <img
                                             src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"

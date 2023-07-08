@@ -16,6 +16,7 @@ import AnewOne from '../layouts/AnewOne'
 import CTAS from '../guides/CTAS'
 import Landpage from '../components/Landpage';
 import Footer from '../components/Footer';
+import Heroes from '../components/Heroes'
 
 
 
@@ -24,7 +25,7 @@ const About = () => {
     <div className="overflow-hidden">
       <Tailwindtwo />
       <Navbar />
-      <AnewTen />
+      <Heroes />
       <Tailwind />
       <AHero />
       <Heros />

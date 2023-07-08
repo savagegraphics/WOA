@@ -14,7 +14,7 @@ const Header = () => {
                             </p>
                         </div>
                         <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                            Onto your baby
+                            Onto your baby { ' ' }
                             <br className="hidden md:block" />
                             registry from{ ' ' }
                             <span className="inline-block text-deepPurple-400">

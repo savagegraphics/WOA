@@ -3,16 +3,22 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <header className="relative bg-cover bg-fixed overflow-hidden" style={{ backgroundImage: "url('https://media.istockphoto.com/id/1225967990/photo/pregnant-woman-beaming-with-joy-holds-ultrasound-scan-in-front-of-round-belly.jpg?s=612x612&w=0&k=20&c=W4q1QOWQyROZ-KJ9y724tF22kvRcVSUUwTLaPDPmQIQ=')" }}>
-            <div className="overlay w-full h-full p-10 text-white text-center">
-                <h1 className="font-dancingScript text-6xl mb-8">Simply The Best</h1>
-                <h3 className="font-openSans text-3xl mb-8">Reasons for Choosing US</h3>
-                <p className="font-openSans text-xl mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab. Vero nostrum quis, odio veniam itaque ullam debitis qui magnam consequatur ab.</p>
-                <br />
-                <button className="border-none outline-none py-2 px-6 rounded-full text-black bg-white mb-12 shadow-md">READ MORE</button>
-                <button className="border-none outline-none py-2 px-6 rounded-full text-black bg-white mb-12 shadow-md">READ MORE</button>
+        <section className="dark:bg-gray-800 dark:text-gray-100">
+            <div className="container flex flex-col-reverse mx-auto lg:flex-row">
+                <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:mt-24 lg:w-1/2 xl:w-2/5 dark:bg-violet-400 dark:text-gray-900">
+                    <div className="flex space-x-2 sm:space-x-4">
+                        <div className="space-y-2">
+                            <h1 className="text-3xl font-bold leading">Babylist&apos;s Top 30 Most Registered-For Products of 2023</h1>
+                            <p className="leadi">Praesentium ea et neque distinctio quas eius repudiandae quaerat obcaecati voluptatem similique!</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-800">
+                    <div className="flex items-center justify-center p-4 md:p-8 lg:p-12">
+                        <img src="https://source.unsplash.com/640x480/" alt="" className="rounded-lg shadow-lg dark:bg-gray-500 aspect-video sm:min-h-96" />
+                    </div>
+                </div>
             </div>
-        </header>
-
+        </section>
     );
 }

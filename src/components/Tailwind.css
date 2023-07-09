@@ -14,15 +14,15 @@
     /* Adjust the value to control the amount of overlap */
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: azure;
     padding: 10px;
     text-align: center;
     margin-left: 14px;
     font-size: large;
 }
 
-button {
-    margin-top: -24rem;
+.custom-button {
+    margin-top: -34rem;
 }
 
 /* .border {
@@ -34,13 +34,13 @@ button {
         position: static;
         margin-top: 10px;
         /* Adjust the value to control the spacing */
-        background-color: white;
+        background-color: azure;
         padding: 0;
         text-align: left;
     }
 
     button {
-        margin-top: -4rem;
+        margin-top: -8rem;
     }
 
 }

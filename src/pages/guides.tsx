@@ -33,7 +33,6 @@ const About = () => {
       <Heros />
       <AnewEight />
       <AnewOne />
-      <Landpage />
       <Footer />
       <BottomNavigationComponent />
     </div>

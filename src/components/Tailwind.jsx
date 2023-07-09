@@ -331,7 +331,6 @@ export default function Example() {
                                                     </a>
                                                     <p className="mt-2 text-gray-500">
                                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mi at tortor commodo commodo.
-                                                        Duis tincidunt dignissim tincidunt.
                                                     </p>
                                                 </div>
                                             </div>

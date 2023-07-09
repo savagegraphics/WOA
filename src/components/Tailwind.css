@@ -3,3 +3,35 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: -20px;
+    /* Adjust the value to control the amount of overlap */
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin-left: 14px;
+    font-size: large;
+}
+
+/* .border {
+    border: purple;
+} */
+
+@media (max-width: 768px) {
+    .text-overlay {
+        position: static;
+        margin-top: 10px;
+        /* Adjust the value to control the spacing */
+        background-color: white;
+        padding: 0;
+        text-align: left;
+    }
+}

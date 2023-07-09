@@ -326,29 +326,30 @@ export default function Example() {
                             {/* Product grid */ }
                             <div className="lg:col-span-3 lg:ml-12">
                                 <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-                                    <div className="">
+                                    <div className="image-container">
                                         <img
-                                            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+                                            src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
                                             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
                                             className="rounded-lg bg-gray-100"
                                         />
-                                        <div className="">  Hey  its me</div>
+                                        <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
                                     </div>
-                                    <div className="">
+                                    <div className="image-container">
                                         <img
                                             src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
                                             alt="Top down view of walnut card tray with embedded magnets and card groove."
                                             className="rounded-lg bg-gray-100"
                                         />
                                     </div>
-                                    <div className="">
+                                    <div className="image-container">
                                         <img
                                             src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
                                             alt="Side of walnut card tray with card groove and recessed card area."
                                             className="rounded-lg bg-gray-100"
-                                        /> </div>
+                                        />
+                                    </div>
                                     { isLargeScreen ? null : (
-                                        <div className="">
+                                        <div className="image-container">
                                             <img
                                                 src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
                                                 alt="Walnut card tray filled with cards and card angled in dedicated groove."
@@ -357,7 +358,11 @@ export default function Example() {
                                         </div>
                                     ) }
                                 </div>
+                                <div className='flex justify-center items-center'>  <button class="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                                    Primary
+                                </button></div>
                             </div>
+
                         </div>
                     </section>
                 </main>

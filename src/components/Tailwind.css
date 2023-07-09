@@ -21,9 +21,12 @@
     font-size: large;
 }
 
-.custom-button {
-    margin-top: -34rem;
+@media screen and (min-width: 768px) {
+    .custom-button {
+        margin-top: -34rem;
+    }
 }
+
 
 /* .border {
     border: purple;
@@ -37,10 +40,6 @@
         background-color: azure;
         padding: 0;
         text-align: left;
-    }
-
-    button {
-        margin-top: -8rem;
     }
 
 }

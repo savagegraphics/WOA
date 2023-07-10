@@ -5,9 +5,9 @@ const NatureSection = () => {
     return (
         <div className="box">
             <section>
-
+                <h1>Nature</h1>
                 <div className="content">
-                    <h1>Nature</h1>
+
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita
                         voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.

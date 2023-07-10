@@ -43,11 +43,17 @@
 /* Updated CSS for smaller screens */
 @media (max-width: 40em) {
     .box section {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'img' 'content';
+    }
+
+    .box .img {
+        align-self: flex-start;
     }
 
     .box .content {
-        margin-top: auto;
+        align-self: flex-end;
     }
 }

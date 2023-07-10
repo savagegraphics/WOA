@@ -1,25 +1,28 @@
 import React from 'react';
 import './Heros.css'
 
-const NatureSection = () => {
+const BlogCard = () => {
     return (
-        <div className="box">
-            <section>
-                <h1>Nature</h1>
-                <div className="content">
-
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita
-                        voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.
-                    </p>
-                    <a href="">Learn more</a>
+        <div className="body">
+            <div className="container-fluid">
+                <div className="blog-card">
+                    <div
+                        className="media col-sm-6 col-xs-6"
+                        style={{ backgroundImage: "url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/bg_24.png)" }}
+                    ></div>
+                    <div className="card-body col-sm-6 col-xs-6">
+                        <p className="tagline text-center">Featured</p>
+                        <h3 className="title text-center">Blue Ocean Waves Crash</h3>
+                        <div className="divider"></div>
+                        <p className="paragraph text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam a incidunt fuga, ducimus nisi iusto ipsum sit deleniti suscipit atque aliquid, velit at? At quasi magni voluptates molestiae aperiam.
+                        </p>
+                        <a href="#" className="read-more glyphicon glyphicon-chevron-down"></a>
+                    </div>
                 </div>
-                <div className="img">
-                    <img src="https://images.unsplash.com/photo-1445966275305-9806327ea2b5?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=14a02fab1200216368d682ecaa91e540" alt="" />
-                </div>
-            </section>
+            </div>
         </div>
     );
 };
 
-export default NatureSection;
+export default BlogCard;

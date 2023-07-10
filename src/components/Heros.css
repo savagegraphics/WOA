@@ -1,7 +1,6 @@
 .box {
     --box-x-padding: 2rem;
     --box-y-padding: 2rem;
-    margin-bottom: 2rem;
 }
 
 .box section {
@@ -74,9 +73,24 @@
         top: var(--box-y-padding);
     }
 
-    .box img {
-        width: 100%;
-        height: auto;
+    .box section {
+        grid-template-rows: auto auto 1fr;
+        /* Adjust row sizes */
+    }
+
+    .box .img {
+        align-self: start;
+        /* Align image to the top */
+    }
+
+    .box .content {
+        margin-top: auto;
+        /* Push content to the bottom */
+    }
+
+    .box p {
+        margin-bottom: 0;
+        /* Remove bottom margin for paragraphs */
     }
 }
 

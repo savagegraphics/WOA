@@ -1,6 +1,7 @@
 .box {
     --box-x-padding: 2rem;
     --box-y-padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .box section {
@@ -72,6 +73,11 @@
         left: var(--box-x-padding);
         top: var(--box-y-padding);
     }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .box .content {
@@ -104,7 +110,6 @@
     display: inline-block;
     background-color: white;
 }
-
 
 .box .img {
     position: relative;

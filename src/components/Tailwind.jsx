@@ -6,6 +6,7 @@ import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
 import './Tailwind.css';
 import Image from 'next/image';
+import Heros from './Heros';
 
 const sortOptions = [
     { name: 'Most Popular', href: '#', current: true },
@@ -66,6 +67,9 @@ function classNames(...classes) {
 export default function Example() {
     const [ mobileFiltersOpen, setMobileFiltersOpen ] = useState(false)
     const [ isLargeScreen, setIsLargeScreen ] = useState(false);
+    const backgroundImageStyle = {
+        backgroundImage: "url(https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)",
+    };
 
     useEffect(() => {
         const handleResize = () => {
@@ -313,30 +317,7 @@ export default function Example() {
 
                             {/* Product grid */ }
                             <div className="lg:col-span-3 lg:ml-12">
-                                <div class="relative font-medium flex items-center content-center">
-                                    <div className="mr-auto ml-auto w-full px-6 py-8 lg:my-0">
-                                        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-                                            <div className="md:flex">
-                                                <div className="md:flex-shrink-0">
-                                                    <img
-                                                        className="h-48 w-full object-cover sm:h-full sm:w-58 md:h-full md:w-58 lg:w-84 lg:h-84 xl:w-120 xl:h-120"
-                                                        src="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?auto=format&fit=crop&w=448&q=80"
-                                                        alt="Man looking at item at a store"
-                                                    />
-                                                </div>
-                                                <div className="p-8">
-                                                    <div className="uppercase tracking-wide text-sm text-indigo-700 font-semibold">Article</div>
-                                                    <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
-                                                        Improve your customer experience
-                                                    </a>
-                                                    <p className="mt-2 text-gray-500">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mi at tortor commodo commodo.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <Heros />
 
 
                                 <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
@@ -378,6 +359,247 @@ export default function Example() {
                                     </button>
                                 </div>
 
+                                <div className="lg:col-span-3 lg:ml-12">
+                                    <div>Products</div>
+                                    <hr />
+                                    <Heros />
+                                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                        <div className="image-container">
+                                            <img
+                                                src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                                alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                            <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                                alt="Top down view of walnut card tray with embedded magnets and card groove."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                                alt="Side of walnut card tray with card groove and recessed card area."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                        </div>
+                                        { isLargeScreen ? null : (
+                                            <div className="image-container">
+                                                <img
+                                                    src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                    alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                                                    className="rounded-lg bg-gray-100"
+                                                />
+                                            </div>
+                                        ) }
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
+                                            View all in Products
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="lg:col-span-3 lg:ml-12">
+                                    <div>Products</div>
+                                    <hr />
+                                    <div class="relative font-medium flex items-center content-center">
+                                        <div className="mr-auto ml-auto w-full px-6 py-8 lg:my-0">
+                                            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                                <div className="md:flex">
+                                                    <div className="md:flex-shrink-0">
+                                                        <img
+                                                            className="h-48 w-full object-cover sm:h-full sm:w-58 md:h-full md:w-58 lg:w-84 lg:h-84 xl:w-120 xl:h-120"
+                                                            src="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?auto=format&fit=crop&w=448&q=80"
+                                                            alt="Man looking at item at a store"
+                                                        />
+                                                    </div>
+                                                    <div className="p-8">
+                                                        <div className="uppercase tracking-wide text-sm text-indigo-700 font-semibold">Article</div>
+                                                        <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                                                            Improve your customer experience
+                                                        </a>
+                                                        <p className="mt-2 text-gray-500">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mi at tortor commodo commodo.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                        <div className="image-container">
+                                            <img
+                                                src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                                alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                            <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                                alt="Top down view of walnut card tray with embedded magnets and card groove."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                                alt="Side of walnut card tray with card groove and recessed card area."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                        </div>
+                                        { isLargeScreen ? null : (
+                                            <div className="image-container">
+                                                <img
+                                                    src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                    alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                                                    className="rounded-lg bg-gray-100"
+                                                />
+                                            </div>
+                                        ) }
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
+                                            View all in Products
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="lg:col-span-3 lg:ml-12">
+                                    <div>Products</div>
+                                    <hr />
+                                    <div class="relative font-medium flex items-center content-center">
+                                        <div className="mr-auto ml-auto w-full px-6 py-8 lg:my-0">
+                                            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                                <div className="md:flex">
+                                                    <div className="md:flex-shrink-0">
+                                                        <img
+                                                            className="h-48 w-full object-cover sm:h-full sm:w-58 md:h-full md:w-58 lg:w-84 lg:h-84 xl:w-120 xl:h-120"
+                                                            src="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?auto=format&fit=crop&w=448&q=80"
+                                                            alt="Man looking at item at a store"
+                                                        />
+                                                    </div>
+                                                    <div className="p-8">
+                                                        <div className="uppercase tracking-wide text-sm text-indigo-700 font-semibold">Article</div>
+                                                        <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                                                            Improve your customer experience
+                                                        </a>
+                                                        <p className="mt-2 text-gray-500">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mi at tortor commodo commodo.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                        <div className="image-container">
+                                            <img
+                                                src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                                alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                            <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                                alt="Top down view of walnut card tray with embedded magnets and card groove."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                                alt="Side of walnut card tray with card groove and recessed card area."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                        </div>
+                                        { isLargeScreen ? null : (
+                                            <div className="image-container">
+                                                <img
+                                                    src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                    alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                                                    className="rounded-lg bg-gray-100"
+                                                />
+                                            </div>
+                                        ) }
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
+                                            View all in Products
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="lg:col-span-3 lg:ml-12">
+                                    <div>Products</div>
+                                    <hr />
+                                    <div class="relative font-medium flex items-center content-center">
+                                        <div className="mr-auto ml-auto w-full px-6 py-8 lg:my-0">
+                                            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+                                                <div className="md:flex">
+                                                    <div className="md:flex-shrink-0">
+                                                        <img
+                                                            className="h-48 w-full object-cover sm:h-full sm:w-58 md:h-full md:w-58 lg:w-84 lg:h-84 xl:w-120 xl:h-120"
+                                                            src="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?auto=format&fit=crop&w=448&q=80"
+                                                            alt="Man looking at item at a store"
+                                                        />
+                                                    </div>
+                                                    <div className="p-8">
+                                                        <div className="uppercase tracking-wide text-sm text-indigo-700 font-semibold">Article</div>
+                                                        <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
+                                                            Improve your customer experience
+                                                        </a>
+                                                        <p className="mt-2 text-gray-500">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mi at tortor commodo commodo.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                        <div className="image-container">
+                                            <img
+                                                src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                                alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                            <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                                alt="Top down view of walnut card tray with embedded magnets and card groove."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                                alt="Side of walnut card tray with card groove and recessed card area."
+                                                className="rounded-lg bg-gray-100"
+                                            />
+                                        </div>
+                                        { isLargeScreen ? null : (
+                                            <div className="image-container">
+                                                <img
+                                                    src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                    alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                                                    className="rounded-lg bg-gray-100"
+                                                />
+                                            </div>
+                                        ) }
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
+                                            View all in Products
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>

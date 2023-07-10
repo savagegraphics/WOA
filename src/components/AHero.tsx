@@ -11,7 +11,7 @@ const AHero = () => {
             <div className="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
                 <div className="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike Revolt</div>
                 <div className="flex items-center justify-between py-2 px-3 bg-gray-400">
-                    <h1 className="text-gray font-bold">$129</h1>
+                    <h1 className="text-gray- font-bold">$129</h1>
                     <button className="bg-gray-800 text-xs text-white px-2 py-1 bg-gray-dark font-semibold rounded uppercase hover:bg-gray">Add to cart</button>
                 </div>
             </div>

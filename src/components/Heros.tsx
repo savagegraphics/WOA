@@ -1,43 +1,24 @@
 import React from 'react';
-import './Heros.css';
-import Image from 'next/image';
+import './Heros.css'
 
-const Heros = () => {
+const NatureSection = () => {
     return (
-        <div className="card-container">
-            <div className="card">
-                <div className="max-w-sm">
-                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                        <Image className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" width={400} height={300} />
-                    </div>
-                    <div>hey this is the card text</div>
+        <div className="box">
+            <section>
+                <h1>Nature</h1>
+                <div className="content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita
+                        voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.
+                    </p>
+                    <a href="">Learn more</a>
                 </div>
-            </div>
-            <div className="card">
-                <div className="max-w-sm">
-                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                        <Image className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" width={400} height={300} />
-                    </div>
-                    <div>hey this is the card text</div>
+                <div className="img">
+                    <img src="https://images.unsplash.com/photo-1445966275305-9806327ea2b5?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=14a02fab1200216368d682ecaa91e540" alt="" />
                 </div>
-            </div>
-            <div className="card">
-                <div className="max-w-sm">
-                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                        <Image className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" width={400} height={300} />
-                    </div>
-                    <div>hey this is the card text</div>
-                </div>
-            </div>
-            <div className="card">
-                <div className="max-w-sm">
-                    <div className="bg-white relative shadow-lg hover:shadow-xl transition duration-500 rounded-lg">
-                        <Image className="rounded-t-lg" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="" width={400} height={300} />
-                    </div>
-                    <div>hey this is the card text</div>
-                </div>
-            </div>
+            </section>
         </div>
-    )
-}
-export default Heros
+    );
+};
+
+export default NatureSection;

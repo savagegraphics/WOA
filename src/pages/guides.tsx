@@ -26,13 +26,15 @@ const About = () => {
     <div className="overflow-hidden">
       <Tailwindtwo />
       <Navbar />
+      {/* <Heros /> */}
       <Heroes />
       <CardStyle />
       <Tailwind />
-      <AHero />
-      <Heros />
+
+      {/* <AHero />
+     
       <AnewEight />
-      <AnewOne />
+      <AnewOne /> */}
       <Footer />
       <BottomNavigationComponent />
     </div>

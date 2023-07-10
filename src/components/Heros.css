@@ -89,26 +89,10 @@
     }
 
     .box p {
-        margin-bottom: 0;
-        /* Remove bottom margin for paragraphs */
+        margin-top: auto;
+        margin-bottom: var(--box-y-padding);
+        line-height: 1.5;
     }
-}
-
-.box .content {
-    color: hsl(0, 0%, 30%);
-    margin-bottom: var(--box-y-padding);
-}
-
-@media (min-width: 40em) {
-    .box .content {
-        margin-bottom: 0;
-    }
-}
-
-.box p {
-    margin-top: 0;
-    margin-bottom: var(--box-y-padding);
-    line-height: 1.5;
 }
 
 .box .content a {

@@ -1,21 +1,49 @@
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.card {
-    width: calc(50% - 16px);
-    max-width: 320px;
-    margin: 8px;
-    padding: 16px;
-    background-color: #ffffff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-}
-
-@media (min-width: 640px) {
-    .card {
-        width: calc(50% - 32px);
+@media (max-width: 480px) {
+    .custom-grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+}
+
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: -20px;
+    /* Adjust the value to control the amount of overlap */
+    left: 0;
+    right: 0;
+    background-color: azure;
+    padding: 10px;
+    text-align: center;
+    margin-left: 14px;
+    font-size: large;
+}
+
+.custom-button {
+    margin-top: -8rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .custom-button {
+        margin-top: -34rem;
+    }
+}
+
+
+/* .border {
+    border: purple;
+} */
+
+@media (max-width: 768px) {
+    .text-overlay {
+        position: static;
+        margin-top: 10px;
+        /* Adjust the value to control the spacing */
+        background-color: azure;
+        padding: 0;
+        text-align: left;
+    }
+
 }

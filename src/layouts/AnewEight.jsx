@@ -1,22 +1,24 @@
-import React from 'react';
+import React from 'react'
 
-const AHero = () => {
-    const backgroundImageStyle = {
-        backgroundImage: "url(https://images.unsplash.com/photo-1539185441755-769473a23570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80)",
-    };
-
-    return (
-        <div className="flex flex-col justify-center items-center max-w-sm mx-auto my-8">
-            <div style={ backgroundImageStyle } className="bg-gray-300 h-64 w-full rounded-lg shadow-md bg-cover bg-center"></div>
-            <div className="w-56 md:w-64 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden">
-                <div className="py-2 text-center font-bold uppercase tracking-wide text-gray-800">Nike Revolt</div>
-                <div className="flex items-center justify-between py-2 px-3 bg-gray-400">
-                    <h1 className="text-gray font-bold">$129</h1>
-                    <button className="bg-gray-800 text-xs text-white px-2 py-1 bg-gray-dark font-semibold rounded uppercase hover:bg-gray">Add to cart</button>
-                </div>
-            </div>
+const AnewEight = () => {
+  return (
+    <div className='my-8 mx-12'>
+      
+<form>   
+    <label for="default-search" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+    <div className="relative">
+        <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+            <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
         </div>
-    );
+        <input type="search" id="default-search" className="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Guides..." required/>
+        <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-blue hover:bg-blue focus:ring-4 focus:outline-none focus:ring-blue font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+    </div>
+</form>
+
+    </div>
+  )
 }
 
-export default AHero;
+export default AnewEight

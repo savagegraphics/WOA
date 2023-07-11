@@ -26,6 +26,7 @@ const About = () => {
     <div className="overflow-hidden">
       <Tailwindtwo />
       <Navbar />
+      <AnewEight />
       {/* <Heros /> */}
       <Heroes />
       <CardStyle />
@@ -33,7 +34,7 @@ const About = () => {
 
       {/* <AHero />
      
-      <AnewEight />
+     
       <AnewOne /> */}
       <Footer />
       <BottomNavigationComponent />

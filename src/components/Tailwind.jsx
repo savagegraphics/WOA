@@ -405,30 +405,7 @@ export default function Example() {
                                 <div className="lg:col-span-3 lg:ml-12">
                                     <div>Products</div>
                                     <hr />
-                                    <div class="relative font-medium flex items-center content-center">
-                                        <div className="mr-auto ml-auto w-full px-6 py-8 lg:my-0">
-                                            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-                                                <div className="md:flex">
-                                                    <div className="md:flex-shrink-0">
-                                                        <img
-                                                            className="h-48 w-full object-cover sm:h-full sm:w-58 md:h-full md:w-58 lg:w-84 lg:h-84 xl:w-120 xl:h-120"
-                                                            src="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?auto=format&fit=crop&w=448&q=80"
-                                                            alt="Man looking at item at a store"
-                                                        />
-                                                    </div>
-                                                    <div className="p-8">
-                                                        <div className="uppercase tracking-wide text-sm text-indigo-700 font-semibold">Article</div>
-                                                        <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
-                                                            Improve your customer experience
-                                                        </a>
-                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mi at tortor commodo commodo.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Heros />
                                     <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                         <div className="image-container">
                                             <img
@@ -471,30 +448,7 @@ export default function Example() {
                                 <div className="lg:col-span-3 lg:ml-12">
                                     <div>Products</div>
                                     <hr />
-                                    <div class="relative font-medium flex items-center content-center">
-                                        <div className="mr-auto ml-auto w-full px-6 py-8 lg:my-0">
-                                            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-                                                <div className="md:flex">
-                                                    <div className="md:flex-shrink-0">
-                                                        <img
-                                                            className="h-48 w-full object-cover sm:h-full sm:w-58 md:h-full md:w-58 lg:w-84 lg:h-84 xl:w-120 xl:h-120"
-                                                            src="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?auto=format&fit=crop&w=448&q=80"
-                                                            alt="Man looking at item at a store"
-                                                        />
-                                                    </div>
-                                                    <div className="p-8">
-                                                        <div className="uppercase tracking-wide text-sm text-indigo-700 font-semibold">Article</div>
-                                                        <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
-                                                            Improve your customer experience
-                                                        </a>
-                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mi at tortor commodo commodo.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Heros />
                                     <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                         <div className="image-container">
                                             <img
@@ -537,30 +491,7 @@ export default function Example() {
                                 <div className="lg:col-span-3 lg:ml-12">
                                     <div>Products</div>
                                     <hr />
-                                    <div class="relative font-medium flex items-center content-center">
-                                        <div className="mr-auto ml-auto w-full px-6 py-8 lg:my-0">
-                                            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-                                                <div className="md:flex">
-                                                    <div className="md:flex-shrink-0">
-                                                        <img
-                                                            className="h-48 w-full object-cover sm:h-full sm:w-58 md:h-full md:w-58 lg:w-84 lg:h-84 xl:w-120 xl:h-120"
-                                                            src="https://images.unsplash.com/photo-1515711660811-48832a4c6f69?auto=format&fit=crop&w=448&q=80"
-                                                            alt="Man looking at item at a store"
-                                                        />
-                                                    </div>
-                                                    <div className="p-8">
-                                                        <div className="uppercase tracking-wide text-sm text-indigo-700 font-semibold">Article</div>
-                                                        <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">
-                                                            Improve your customer experience
-                                                        </a>
-                                                        <p className="mt-2 text-gray-500">
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus mi at tortor commodo commodo.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <Heros />
                                     <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                         <div className="image-container">
                                             <img

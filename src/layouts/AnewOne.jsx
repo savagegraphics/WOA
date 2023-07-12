@@ -7,6 +7,7 @@ import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from
 import './AnewOne.css';
 import Image from 'next/image';
 import CardStyle1 from '../components/CardStyle1';
+import LPage from '../shop/LPage';
 
 
 const sortOptions = [
@@ -316,17 +317,14 @@ export default function Example() {
 
                             {/* Product grid */ }
                             <div className="lg:col-span-3 lg:ml-12">
-                             <div className="ml-16 sm:ml-8">   <h1 className='text-3xl font-bold pb-4'>FLASH SALE </h1>
+                             <div className="ml-16 sm:ml-1">   <h1 className='text-3xl font-bold pb-4'>FLASH SALE </h1>
                                 <p className='text-xl'>The biggest deals on Snoo, Uppababy, Frida, and much more!</p></div>
                                < CardStyle1/>
-                               < CardStyle1/>
-                               < CardStyle1/>
-
- 
+                              <LPage/>
                         </div>
                         </div>
                     </section>
-                </main>
+                </main> 
             </div>
         </div>
     )

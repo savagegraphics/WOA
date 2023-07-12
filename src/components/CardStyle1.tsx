@@ -54,7 +54,7 @@ export default function Example() {
                                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                                 />
                             </div>
-                            <div className="mt-4 flex justify-between">
+                           <div className="mt-4 flex justify-between">
                                 <div>
                                     <h3 className="text-lg text-purple pl-4">
                                         <Link href={product.href}>

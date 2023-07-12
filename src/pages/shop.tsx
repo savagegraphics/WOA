@@ -14,7 +14,7 @@ import Footer from '../components/Footer';
 import Landpage from '../components/Landpage';
 import AnewTen from '../layouts/AnewTen';
 import AnewOne from '../layouts/AnewOne'
-
+import LPage from '../shop/LPage';
 
 
 

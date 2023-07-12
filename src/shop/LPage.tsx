@@ -11,7 +11,7 @@ const LPage = () => {
           <div className="card_content">
             <h2 className="card_title">Farmstand Salad &#x2022; $9</h2>
             <div className="card_text">
-              <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens and seasonal vegetables, fresh from the farmer's market.</p>
+              <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens and seasonal vegetables, fresh from the farmer&apos;s market.</p>
             </div>
           </div>
         </div>

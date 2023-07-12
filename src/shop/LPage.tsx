@@ -4,7 +4,7 @@ import './LPage.css';
 const LPage = () => {
   return (
     <div className="main">
-    <ul className="cards">
+    <ul className="cards custom-grid-cols-2 ">
       <li className="cards_item">
         <div className="card" tabIndex={0}>
           <div className="card_image"><img src="https://assets.codepen.io/652/photo-1468777675496-5782faaea55b.jpeg" alt="mixed vegetable salad in a mason jar. "/></div>

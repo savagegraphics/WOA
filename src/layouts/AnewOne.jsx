@@ -188,14 +188,12 @@ export default function Example() {
                     </Dialog>
                 </Transition.Root>
 
-                <main className="mx-auto max-w-9xl px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-                        { isLargeScreen ? (
-                            <h1 className="text-xl font-thin tracking-tight text-gray-900 hidden lg:block">Guides</h1>
-                        ) : null }
-                        <h1 className="text-xl font-thin tracking-tight text-gray-900">
-                            Products
-                        </h1>
+                <main className="mx-auto max-w-8xl lg:ml-12 px-4 sm:px-6 lg:px-8">
+                    <div className="flex items-baseline justify-between pb-6 pt-24">
+                    <h1 className="invisible md:visible lg:visible text-xl border-b border-gray-light w-1/6 pb-2 font-thin tracking-tight text-gray-900">
+                    Products
+                    </h1>
+
                         <div className="flex items-center">
                             <Menu as="div" className="relative inline-block text-left">
                                 <div>
@@ -318,6 +316,10 @@ export default function Example() {
 
                             {/* Product grid */ }
                             <div className="lg:col-span-3 lg:ml-12">
+                             <div className="ml-16 sm:ml-8">   <h1 className='text-3xl font-bold pb-4'>FLASH SALE </h1>
+                                <p className='text-xl'>The biggest deals on Snoo, Uppababy, Frida, and much more!</p></div>
+                               < CardStyle1/>
+                               < CardStyle1/>
                                < CardStyle1/>
 
  

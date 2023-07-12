@@ -11,7 +11,7 @@ const LPage = () => {
           <div className="card_content">
             <h2 className="card_title">Farmstand Salad &#x2022; $9</h2>
             <div className="card_text">
-              <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens and seasonal vegetables, fresh from the farmer&apos;s market.</p>
+              <p>Dig into the freshest.</p>
             </div>
           </div>
         </div>
@@ -23,8 +23,7 @@ const LPage = () => {
           <div className="card_content">
             <h2 className="card_title">Ultimate Reuben &#x2022; $18</h2>
             <div className="card_text">
-              <p>All great meals take time, but this one takes it to the next level! More than 650 hours of fermenting, brining, aging, and curing goes into each and every one of our legendary Reuben sandwiches.
-              </p>
+              <p>All great meals take time.</p>
              </div>
           </div>
         </div>
@@ -35,7 +34,7 @@ const LPage = () => {
           <div className="card_content">
             <div className="card_text">
               <span className="note">Seasonal.</span>
-              <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this refreshing, shareable dessert.</p>
+              <p>A succulent sextet dessert.</p>
             </div>
           </div>
         </div>
@@ -46,7 +45,7 @@ const LPage = () => {
           <div className="card_content">
             <div className="card_text">
               <span className="note">Seasonal.</span>
-              <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this refreshing, shareable dessert.</p>
+              <p>A succulent sextet dessert.</p>
             </div>
           </div>
         </div>

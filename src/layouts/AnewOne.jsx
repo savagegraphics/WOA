@@ -317,9 +317,8 @@ export default function Example() {
 
                             {/* Product grid */ }
                             <div className="lg:col-span-3 lg:ml-12">
-                             <div className="ml-16 sm:ml-1">   <h1 className='text-3xl font-bold pb-4'>FLASH SALE </h1>
+                             <div className="ml-16 mb-8 sm:ml-1">   <h1 className='text-3xl font-bold pb-4'>FLASH SALE </h1>
                                 <p className='text-xl'>The biggest deals on Snoo, Uppababy, Frida, and much more!</p></div>
-                               < CardStyle1/>
                               <LPage/>
                         </div>
                         </div>

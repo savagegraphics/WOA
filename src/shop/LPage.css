@@ -46,7 +46,7 @@
   .card_image {
     display: flex;
     height: 250px;
-    box-shadow: 0 50px 100px 0 var(--violet);
+    box-shadow: 0 50px 100px 0 var(--white);
   }
   
   .card_image img {
@@ -61,7 +61,7 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    background-color: var(--purple);
+    background-color: var(--white);
     border-radius: 5px 25px 5px 50px;
     transition: transform 0.1s linear, box-shadow 0.2s;
   }
@@ -79,7 +79,7 @@
   
   .card_content {
     padding: 0.5rem 1rem 1rem;
-    color: var(--white);
+    color: var(--black);
   }
   
   .card_title {
@@ -194,14 +194,15 @@
     background-image: linear-gradient(
       -45deg,
       transparent 10%,
-      var(--aqua) 10.5%,
+      purple 10.5%,
       var(--aqua) 90%,
       transparent 90.5%
     );
-    color: var(--black);
+    color: white;
     font-size: 1.3em;
     font-style: italic;
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
   }
   
   @keyframes fly-in {

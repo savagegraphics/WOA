@@ -122,7 +122,7 @@
     margin-right: 0.05em;
   }
   
-  @media (min-width: 480px) {
+  @media (min-width: 210px) {
     .card_text {
       overflow: auto;
       max-height: 14rem;

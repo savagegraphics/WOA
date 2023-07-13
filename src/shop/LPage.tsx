@@ -36,7 +36,7 @@ const products = [
         href: '#',
         imageSrc: "https://media.istockphoto.com/id/1255573365/photo/baby-girl-little-hands-holding-transparent-plastic-bottle-of-oil-on-light-pink-table.webp?b=1&s=170667a&w=0&k=20&c=3bIYA2UWvaH4usxL5b4vmjnuV_bYnMj0MM1Avi1NHnI=",
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$3,500',
+        price: '$500',
         color: 'Black',
     },
     {
@@ -45,7 +45,7 @@ const products = [
         href: '#',
         imageSrc: "https://media.istockphoto.com/id/1419157355/photo/home-pamper-routine-with-baby.webp?b=1&s=170667a&w=0&k=20&c=ws7LfWYpR6AmIYwF39MNRYGBhJKFXEeg1KncrlrFEHw=",
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$3,500',
+        price: '$123',
         color: 'Black',
     },
     {
@@ -54,7 +54,7 @@ const products = [
         href: '#',
         imageSrc: "https://media.istockphoto.com/id/523967463/photo/pacifier.webp?b=1&s=170667a&w=0&k=20&c=h0OdSfrWMC2U91lQUiP0jvqlCQGLf1q9dvA4aavMGQU=",
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$3,500',
+        price: '$320',
         color: 'Black',
     },
     {
@@ -63,7 +63,7 @@ const products = [
         href: '#',
         imageSrc: "https://media.istockphoto.com/id/625379326/photo/organic-cosmetic-children-for-bath-on-wooden-bakground-close-up.webp?b=1&s=170667a&w=0&k=20&c=Zsrhv2BInxdUvtgXg8PFo6ZxRbc5GZd5A4G-8F_3zfk=",
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$3,500',
+        price: '$456',
         color: 'Black',
     },
     {
@@ -72,7 +72,7 @@ const products = [
         href: '#',
         imageSrc: "https://media.istockphoto.com/id/859936614/photo/baby-products-in-a-nursery.webp?b=1&s=170667a&w=0&k=20&c=-_XzB5OZCZWV136CUhkexiQVbtTXDrd-66QZRDuz1bQ=",
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$3,500',
+        price: '$620',
         color: 'Black',
     },
     {
@@ -90,7 +90,7 @@ const products = [
         href: '#',
         imageSrc: "https://images.unsplash.com/photo-1516627145497-ae6968895b74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFieSUyMHByb2R1Y3RzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$3,500',
+        price: '$780',
         color: 'Black',
     },
     {
@@ -99,7 +99,7 @@ const products = [
         href: '#',
         imageSrc: "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFieSUyMHByb2R1Y3RzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$3,500',
+        price: '$590',
         color: 'Black',
     },
     {
@@ -108,7 +108,7 @@ const products = [
         href: '#',
         imageSrc: "https://plus.unsplash.com/premium_photo-1661679055213-4d018ebf7164?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhYnklMjBwcm9kdWN0c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
         imageAlt: "Front of men's Basic Tee in black.",
-        price: '$3,500',
+        price: '$200',
         color: 'Black',
     }, 
     

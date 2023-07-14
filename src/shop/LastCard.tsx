@@ -33,7 +33,7 @@ const products = [
 const LastCard = () => {
   return (
     <div className='root'>
-  <div className="wrap">
+  <div className="wrap custom-grid-cols-2 ">
   {products.map((product) => (
   <div key={product.id} className="box">
     <div className="box-top">

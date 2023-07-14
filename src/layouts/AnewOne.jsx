@@ -321,6 +321,10 @@ export default function Example() {
                              <div className="ml-16 mb-8 sm:ml-1">   <h1 className='text-3xl font-bold pb-4'>FLASH SALE </h1>
                                 <p className='text-xl'>The biggest deals on Snoo, Uppababy, Frida, and much more!</p></div>
                               <LPage/>
+                              <div className="text-2xl mt-80 mb-12 font-semibold border-b border-gray-dark pb-4 flex items-center justify-center">
+  Browse by Category
+</div>
+
                               <LastCard/>
                         </div>
                         </div>

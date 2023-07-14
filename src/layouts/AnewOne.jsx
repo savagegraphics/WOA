@@ -8,6 +8,7 @@ import './AnewOne.css';
 import Image from 'next/image';
 import CardStyle1 from '../components/CardStyle1';
 import LPage from '../shop/LPage';
+import LastCard from '../shop/LastCard';
 
 
 const sortOptions = [
@@ -320,6 +321,7 @@ export default function Example() {
                              <div className="ml-16 mb-8 sm:ml-1">   <h1 className='text-3xl font-bold pb-4'>FLASH SALE </h1>
                                 <p className='text-xl'>The biggest deals on Snoo, Uppababy, Frida, and much more!</p></div>
                               <LPage/>
+                              <LastCard/>
                         </div>
                         </div>
                     </section>

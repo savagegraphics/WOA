@@ -11,7 +11,7 @@ const HerosThree = () => {
                 </div>
 
                 <div className="hidden relative lg:block  lg:col-span-3">
-                    <img className="absolute ml-8 inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1650984385/hello-baby/Best-Wearable-Breast-Pumps-Header.jpg" alt="Ad- woman on a beach" />
+                    <img className="absolute ml-8 inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1572643181/pregnancy-week-by-week/27-weeks-pregnant-barbie-header.jpg" alt="Ad- woman on a beach" />
                 </div>
             </div>
         </div>

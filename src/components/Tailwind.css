@@ -85,6 +85,14 @@
         padding: 0;
         text-align: left;
     }
+    .text-overlayed {
+        position: static;
+        margin-top: -10px;
+        /* Adjust the value to control the spacing */
+        background-color: #fff;
+        padding: 0;
+        text-align: left;
+    }
     .btn{
         position: relative;
         bottom: 0;

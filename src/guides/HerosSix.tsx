@@ -11,7 +11,7 @@ const HerosSix = () => {
                 </div>
 
                 <div className="hidden relative lg:block  lg:col-span-3">
-                    <img className="absolute ml-8 inset-0 w-full h-full object-cover object-center" src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1650984385/hello-baby/Best-Wearable-Breast-Pumps-Header.jpg" alt="Ad- woman on a beach" />
+                    <img className="absolute ml-8 inset-0 w-full h-full object-cover object-center"  src="https://images.babylist.com/image/upload/f_auto,q_auto:best,c_scale,w_768/v1687840476/hello-baby/Adult_Hobbies_gifts_for_babies_toddlers.jpg" alt="Ad- woman on a beach" />
                 </div>
             </div>
         </div>

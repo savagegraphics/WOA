@@ -250,7 +250,7 @@ export default function Example() {
                                             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
                                             className="bg-gray-100 img"
                                         />
-                                        <div className="text-overlay">5 Baby Gear Essentials You Won&amp;t Need To Upgrade</div>
+                                        <div className="text-overlay">5 Baby Gear Essentials You Won&apos;t Need To Upgrade</div>
                                     </div>
                                     <div className="image-container">
                                         <img

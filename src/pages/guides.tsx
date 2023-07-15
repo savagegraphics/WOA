@@ -12,7 +12,7 @@ import Tailwind from '../components/Tailwind';
 import Heros from '../components/Heros'
 import AHero from '../components/AHero'
 import AAHero from '../components/AAHero';
-import AnewOne from '../layouts/AnewOne'
+import AnewOne from '../../../AnewOne'
 import CTAS from '../guides/CTAS'
 import Landpage from '../components/Landpage';
 import Footer from '../components/Footer';

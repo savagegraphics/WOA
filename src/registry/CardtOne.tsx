@@ -9,7 +9,7 @@ function MyComponent() {
                 <div
                     style={{
                         backgroundImage:
-                            'url("https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")',
+                            'url("https://media.istockphoto.com/id/1166345332/photo/pregnant-woman-shopping.webp?b=1&s=170667a&w=0&k=20&c=J0_YnehPqVkCIGoc_OCGFi2iYYwaCshNiaoZs-vzSeU=")',
                     }}
                     className="h-52 sm:h-full sm:w-72 rounded-xl bg-gray-100 bg-center bg-cover"
                 ></div>

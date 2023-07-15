@@ -7,6 +7,12 @@ import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from
 import './Tailwind.css';
 import Image from 'next/image';
 import Heros from './Heros';
+import HerosOne from '../guides/HerosOne';
+import HerosTwo from '../guides/HerosTwo';
+import HerosThree from '../guides/HerosThree';
+import HerosFour from '../guides/HerosFour';
+import HerosFive from '../guides/HerosFive';
+import HerosSix from '../guides/HerosSix';
 
 const sortOptions = [
     { name: 'Most Popular', href: '#', current: true },
@@ -16,11 +22,14 @@ const sortOptions = [
     { name: 'Price: High to Low', href: '#', current: false },
 ]
 const subCategories = [
-    { name: 'Totes', href: '#' },
-    { name: 'Backpacks', href: '#' },
-    { name: 'Travel Bags', href: '#' },
-    { name: 'Hip Bags', href: '#' },
-    { name: 'Laptop Sleeves', href: '#' },
+    { name: 'Home', href: '#' },
+    { name: 'Products', href: '#' },
+    { name: 'Sample Registry', href: '#' },
+    { name: 'Pregnancy', href: '#' },
+    { name: 'Pregnancy Week by Week', href: '#' },
+    { name: 'Baby Names', href: '#' },
+    { name: 'Parenting', href: '#' },
+    { name: 'Friends & Family', href: '#' },
 ]
 const filters = [
     {
@@ -128,7 +137,7 @@ export default function Example() {
                                     {/* Filters */ }
                                     <form className="mt-4 border-t border-gray-200">
                                         <h3 className="sr-only">Categories</h3>
-                                        <ul role="list" className="px-2 py-3 font-medium text-gray-900">
+                                        <ul role="list" className="px-2 py-3 font-semibold text-xl text-gray-dark">
                                             { subCategories.map((category) => (
                                                 <li key={ category.name }>
                                                     <a href={ category.href } className="block px-2 py-3">
@@ -137,49 +146,6 @@ export default function Example() {
                                                 </li>
                                             )) }
                                         </ul>
-
-                                        { filters.map((section) => (
-                                            <Disclosure as="div" key={ section.id } className="border-t border-gray-200 px-4 py-6">
-                                                { ({ open }) => (
-                                                    <>
-                                                        <h3 className="-mx-2 -my-3 flow-root">
-                                                            <Disclosure.Button className="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500">
-                                                                <span className="font-medium text-gray-900">{ section.name }</span>
-                                                                <span className="ml-6 flex items-center">
-                                                                    { open ? (
-                                                                        <MinusIcon className="h-5 w-5" aria-hidden="true" />
-                                                                    ) : (
-                                                                        <PlusIcon className="h-5 w-5" aria-hidden="true" />
-                                                                    ) }
-                                                                </span>
-                                                            </Disclosure.Button>
-                                                        </h3>
-                                                        <Disclosure.Panel className="pt-6">
-                                                            <div className="space-y-6">
-                                                                { section.options.map((option, optionIdx) => (
-                                                                    <div key={ option.value } className="flex items-center">
-                                                                        <input
-                                                                            id={ `filter-mobile-${section.id}-${optionIdx}` }
-                                                                            name={ `${section.id}[]` }
-                                                                            defaultValue={ option.value }
-                                                                            type="checkbox"
-                                                                            defaultChecked={ option.checked }
-                                                                            className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                                                        />
-                                                                        <label
-                                                                            htmlFor={ `filter-mobile-${section.id}-${optionIdx}` }
-                                                                            className="ml-3 min-w-0 flex-1 text-gray-500"
-                                                                        >
-                                                                            { option.label }
-                                                                        </label>
-                                                                    </div>
-                                                                )) }
-                                                            </div>
-                                                        </Disclosure.Panel>
-                                                    </>
-                                                ) }
-                                            </Disclosure>
-                                        )) }
                                     </form>
                                 </Dialog.Panel>
                             </Transition.Child>
@@ -188,11 +154,11 @@ export default function Example() {
                 </Transition.Root>
 
                 <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
+                    <div className="flex items-baseline justify-between pb-6 pt-24">
                         { isLargeScreen ? (
-                            <h1 className="text-xl font-thin tracking-tight text-gray-900 hidden lg:block">Guides</h1>
+                            <h1 className="text-xl font-thin border-b border-gray-light pb-6 w-1/6 tracking-tight text-gray-900 hidden lg:block">Guides</h1>
                         ) : null }
-                        <h1 className="text-xl font-thin tracking-tight text-gray-900">
+                        <h1 className="text-xl font-thin border-b border-gray-light pb-6 w-1/2 tracking-tight text-gray-900">
                             Products
                         </h1>
                         <div className="flex items-center">
@@ -263,56 +229,13 @@ export default function Example() {
                             {/* Filters */ }
                             <form className="hidden lg:block">
                                 <h3 className="sr-only">Categories</h3>
-                                <ul role="list" className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
+                                <ul role="list" className="space-y-4 pb-6 font-semibold text-xl text-gray-dark">
                                     { subCategories.map((category) => (
                                         <li key={ category.name }>
                                             <a href={ category.href }>{ category.name }</a>
                                         </li>
                                     )) }
                                 </ul>
-
-                                { filters.map((section) => (
-                                    <Disclosure as="div" key={ section.id } className="border-b border-gray-200 py-6">
-                                        { ({ open }) => (
-                                            <>
-                                                <h3 className="-my-3 flow-root">
-                                                    <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500">
-                                                        <span className="font-medium text-gray-900">{ section.name }</span>
-                                                        <span className="ml-6 flex items-center">
-                                                            { open ? (
-                                                                <MinusIcon className="h-5 w-5" aria-hidden="true" />
-                                                            ) : (
-                                                                <PlusIcon className="h-5 w-5" aria-hidden="true" />
-                                                            ) }
-                                                        </span>
-                                                    </Disclosure.Button>
-                                                </h3>
-                                                <Disclosure.Panel className="pt-6">
-                                                    <div className="space-y-4">
-                                                        { section.options.map((option, optionIdx) => (
-                                                            <div key={ option.value } className="flex items-center">
-                                                                <input
-                                                                    id={ `filter-${section.id}-${optionIdx}` }
-                                                                    name={ `${section.id}[]` }
-                                                                    defaultValue={ option.value }
-                                                                    type="checkbox"
-                                                                    defaultChecked={ option.checked }
-                                                                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                                                />
-                                                                <label
-                                                                    htmlFor={ `filter-${section.id}-${optionIdx}` }
-                                                                    className="ml-3 text-sm text-gray-600"
-                                                                >
-                                                                    { option.label }
-                                                                </label>
-                                                            </div>
-                                                        )) }
-                                                    </div>
-                                                </Disclosure.Panel>
-                                            </>
-                                        ) }
-                                    </Disclosure>
-                                )) }
                             </form>
 
                             {/* Product grid */ }
@@ -320,214 +243,301 @@ export default function Example() {
                                 <Heros />
 
 
-                                <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                <div className="grid lg:grid-cols-3 mb-36 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                     <div className="image-container">
                                         <img
-                                            src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                            src="https://media.istockphoto.com/id/1360064272/photo/young-pregnant-woman-with-glasses-and-a-medical-mask-in-a-baby-store-the-girl-chooses-a.webp?b=1&s=170667a&w=0&k=20&c=KDeBWGLj90Of9IZ1y4TkT-J0QmcoAxwb2DPTPo84jUA="
                                             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                                            className="rounded-lg bg-gray-100"
+                                            className="bg-gray-100 img"
                                         />
-                                        <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                        <div className="text-overlay">5 Baby Gear Essentials You Won&amp;t Need To Upgrade</div>
                                     </div>
                                     <div className="image-container">
                                         <img
-                                            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                            src="https://media.istockphoto.com/id/1336699745/photo/pregnant-woman-and-her-son-choosing-baby-carriage-in-a-store.webp?b=1&s=170667a&w=0&k=20&c=jJmINmAm-QTvkHj2WLjMmKx-LzCVidDf70kghjwP08U="
                                             alt="Top down view of walnut card tray with embedded magnets and card groove."
-                                            className="rounded-lg bg-gray-100"
+                                            className="bg-gray-100 img"
                                         />
+                                         <div className="text-overlayed">Best Rotating Car Seats</div>
                                     </div>
                                     <div className="image-container">
                                         <img
-                                            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                            src="https://media.istockphoto.com/id/1166345332/photo/pregnant-woman-shopping.webp?b=1&s=170667a&w=0&k=20&c=J0_YnehPqVkCIGoc_OCGFi2iYYwaCshNiaoZs-vzSeU="
                                             alt="Side of walnut card tray with card groove and recessed card area."
-                                            className="rounded-lg bg-gray-100"
+                                            className="bg-gray-100 img"
                                         />
+                                     <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
                                     </div>
                                     { isLargeScreen ? null : (
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                src="https://media.istockphoto.com/id/1368186851/photo/young-couple-in-a-shopping-store.webp?b=1&s=170667a&w=0&k=20&c=vxQl5jHnGQqZ1LgieIt8r9mK-qXki4cYkc84AE08Lyw="
                                                 alt="Walnut card tray filled with cards and card angled in dedicated groove."
-                                                className="rounded-lg bg-gray-100"
+                                                className="bg-gray-100 img"
                                             />
+                                             <div className="text-overlay">8 Essential Things You Need to Bring Home a Newborn</div>
                                         </div>
                                     ) }
                                 </div>
-                                <div className="flex justify-center items-center">
+                                <div className="flex justify-center items-center mt-12">
                                     <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
                                         View all in Products
                                     </button>
                                 </div>
 
                                 <div className="lg:col-span-3 lg:ml-12">
-                                    <div>Products</div>
+                                <div className='text-2xl font-thin'>Sample Registries</div>
                                     <hr />
-                                    <Heros />
-                                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                    <HerosOne />
+                                    <div className="grid lg:grid-cols-3 mb-36 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                         <div className="image-container">
                                             <img
-                                                src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1556658235/hello-baby/etsy-baby-sample-registry-header.jpg"
                                                 alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                                                className="rounded-lg bg-gray-100"
-                                            />
-                                            <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                                className="bg-gray-100 img"            
+                                        />
+                                            <div className="text-overlayed">Etsy Baby Registry</div>
                                         </div>
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1565376312/hello-baby/products-for-summer-babies-swimsuit-hat-header.jpg"
                                                 alt="Top down view of walnut card tray with embedded magnets and card groove."
-                                                className="rounded-lg bg-gray-100"
+                                                className="bg-gray-100 img"
                                             />
+                                             <div className="text-overlay">Having a Summer Baby? Here Are Your Registry Must-Haves</div>
                                         </div>
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1576619084/hello-baby/500-dollar-baby-registry-header.jpg"
                                                 alt="Side of walnut card tray with card groove and recessed card area."
-                                                className="rounded-lg bg-gray-100"
+                                                className="bg-gray-100 img"
                                             />
+                                             <div className="text-overlay">Build Your Baby Registry on a $500 Budget</div>
                                         </div>
                                         { isLargeScreen ? null : (
                                             <div className="image-container">
                                                 <img
-                                                    src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                    src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1580838100/hello-baby/green-baby-sample-registry-header.jpg"
                                                     alt="Walnut card tray filled with cards and card angled in dedicated groove."
-                                                    className="rounded-lg bg-gray-100"
-                                                />
+                                                    className="bg-gray-100 img"                                                />
+                                      <div className="text-overlay">Eco-Friendly Baby Registry</div>
                                             </div>
                                         ) }
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
-                                            View all in Products
+                                          View all sample registries
                                         </button>
                                     </div>
                                 </div>
                                 <div className="lg:col-span-3 lg:ml-12">
-                                    <div>Products</div>
+                                <div className='text-2xl font-thin'>Pregnancy</div>
                                     <hr />
-                                    <Heros />
-                                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                    <HerosTwo />
+                                    <div className="grid lg:grid-cols-3 mb-36 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                         <div className="image-container">
                                             <img
-                                                src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1563315823/hello-baby/best-pregnancy-baby-books-2019-header.jpg"
                                                 alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                                                className="rounded-lg bg-gray-100"
-                                            />
-                                            <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                                className="bg-gray-100 img"                                            />
+                                            <div className="text-overlay">Best Pregnancy Books</div>
                                         </div>
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1508362419/csection_header_alpdy2.jpg"
                                                 alt="Top down view of walnut card tray with embedded magnets and card groove."
-                                                className="rounded-lg bg-gray-100"
-                                            />
+                                                className="bg-gray-100 img"                                            />
+                                             <div className="text-overlay">What to Know about C-Sections</div>
                                         </div>
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1650392978/hello-baby/Hospital-Bag-Essentials-Header.jpg"
                                                 alt="Side of walnut card tray with card groove and recessed card area."
-                                                className="rounded-lg bg-gray-100"
-                                            />
+                                                className="bg-gray-100 img"                                            />
+                                             <div className="text-overlay">Ultimately Hospital Bag Checklist for Mom and Baby</div>
                                         </div>
                                         { isLargeScreen ? null : (
                                             <div className="image-container">
                                                 <img
-                                                    src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                    src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1561148722/hello-baby/best-pregnancy-tests-to-take-header.jpg"
                                                     alt="Walnut card tray filled with cards and card angled in dedicated groove."
-                                                    className="rounded-lg bg-gray-100"
-                                                />
+                                                    className="bg-gray-100 img"                                                />
+                                            <div className="text-overlay">Best Pregnancy Tests to Take in 2023</div>
                                             </div>
                                         ) }
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
-                                            View all in Products
+                                            View all in Pregnancy
                                         </button>
                                     </div>
                                 </div>
                                 <div className="lg:col-span-3 lg:ml-12">
-                                    <div>Products</div>
+                                <div className='text-2xl font-thin'>Pregnancy Week by Week </div>
                                     <hr />
-                                    <Heros />
-                                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                    <HerosThree />
+                                    <div className="grid lg:grid-cols-3 mb-36 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                         <div className="image-container">
                                             <img
-                                                src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1572634986/pregnancy-week-by-week/4-weeks-pregnant-babysize-poppy-seed-header.jpg"
                                                 alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                                                className="rounded-lg bg-gray-100"
-                                            />
-                                            <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                                className="bg-gray-100 img"                                            />
+                                            <div className="text-overlayed">4 Weeks Pregnant</div>
                                         </div>
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1571689046/pregnancy-week-by-week/5-weeks-pregnant-babysize-pop-rock-header.jpg"
                                                 alt="Top down view of walnut card tray with embedded magnets and card groove."
-                                                className="rounded-lg bg-gray-100"
-                                            />
+                                                className="bg-gray-100 img"                                            />
+                                                 <div className="text-overlayed">5 Weeks Pregnant</div>
                                         </div>
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1572635703/pregnancy-week-by-week/6-weeks-pregnant-babysize-chiclet-header.jpg"
                                                 alt="Side of walnut card tray with card groove and recessed card area."
-                                                className="rounded-lg bg-gray-100"
-                                            />
+                                                className="bg-gray-100 img"                                            />
+                                                 <div className="text-overlayed">6 Weeks Pregant</div>
                                         </div>
                                         { isLargeScreen ? null : (
                                             <div className="image-container">
                                                 <img
-                                                    src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                    src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1572643792/pregnancy-week-by-week/29-weeks-pregnant-fanny-pack-header.jpg"
                                                     alt="Walnut card tray filled with cards and card angled in dedicated groove."
-                                                    className="rounded-lg bg-gray-100"
-                                                />
+                                                    className="bg-gray-100 img"                                                />
+                                                     <div className="text-overlay">29 Weeks Pregnant</div>
                                             </div>
                                         ) }
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
-                                            View all in Products
+                                            View all in Pregnant Week by Week
                                         </button>
                                     </div>
                                 </div>
                                 <div className="lg:col-span-3 lg:ml-12">
-                                    <div>Products</div>
+                                <div className='text-2xl font-thin'>Baby Names</div>
                                     <hr />
-                                    <Heros />
-                                    <div className="grid lg:grid-cols-3 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                    <HerosFour />
+                                    <div className="grid lg:grid-cols-3 mb-36 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
                                         <div className="image-container">
                                             <img
-                                                src="https://media.istockphoto.com/id/500753843/photo/young-pregnant-woman.jpg?s=612x612&w=0&k=20&c=ukvDWdHuX6U4caIQabsFAn-6KyaZd7uq4X-5GwMMEQ0="
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1680277846/hello-baby/Baby%20Names/Boy_Baby_Name.jpg"
                                                 alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                                                className="rounded-lg bg-gray-100"
-                                            />
-                                            <div className="text-overlay">How to Get Free Baby Stuff While Pregnant</div>
+                                                className="bg-gray-100 img"                                            />
+                                            <div className="text-overlay">Baby Boy Name That Start with A</div>
                                         </div>
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1680277846/hello-baby/Baby%20Names/Gender_Neutral_Baby_Name.jpg"
                                                 alt="Top down view of walnut card tray with embedded magnets and card groove."
-                                                className="rounded-lg bg-gray-100"
-                                            />
+                                                className="bg-gray-100 img"                                            />
+                                                 <div className="text-overlay">Gender-Neutral Baby Names That Start with A</div>
                                         </div>
                                         <div className="image-container">
                                             <img
-                                                src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1680277846/hello-baby/Baby%20Names/Girl_Baby_Name.jpg"
                                                 alt="Side of walnut card tray with card groove and recessed card area."
-                                                className="rounded-lg bg-gray-100"
-                                            />
+                                                className="bg-gray-100 img"                                            />
+                                                 <div className="text-overlay">Baby Girl Names That Start with B</div>
                                         </div>
                                         { isLargeScreen ? null : (
                                             <div className="image-container">
                                                 <img
-                                                    src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                                                    src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1680277846/hello-baby/Baby%20Names/Boy_Baby_Name.jpg"
                                                     alt="Walnut card tray filled with cards and card angled in dedicated groove."
-                                                    className="rounded-lg bg-gray-100"
-                                                />
+                                                    className="bg-gray-100 img"                                                />
+                                                     <div className="text-overlay">Baby Boy Names That Start with B</div>
                                             </div>
                                         ) }
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
-                                            View all in Products
+                                            View all in Baby Names
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="lg:col-span-3 lg:ml-12">
+                                <div className='text-2xl font-thin'>Parenting</div>
+                                    <hr />
+                                    <HerosFive />
+                                    <div className="grid lg:grid-cols-3 mb-36 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                        <div className="image-container">
+                                            <img
+                                                src="https://images.babylist.com/image/upload/f_auto,q_auto:best,c_scale,w_768/v1687296935/hello-baby/how_montessori_can_help_babys_development.jpg"
+                                                alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                                                className="bg-gray-100 img"                                            />
+                                            <div className="text-overlay">Everything You Need to Know About Montessori for Babies</div>
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://images.babylist.com/image/upload/f_auto,q_auto:best,c_scale,w_768/v1686543805/hello-baby/How_to_Plan_a_Disney_Vacation_with_a_Baby_or_Toddler.jpg"
+                                                alt="Top down view of walnut card tray with embedded magnets and card groove."
+                                                className="bg-gray-100 img"
+                                            />
+                                                 <div className="text-overlay">How to Plan a Disney Vacation with a Baby</div>
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://images.babylist.com/image/upload/f_auto,q_auto:best,c_scale,w_768/v1687469472/hello-baby/Crafts_for_Toddlers.jpg"
+                                                alt="Side of walnut card tray with card groove and recessed card area."
+                                                className="bg-gray-100 img"                                            />
+                                                 <div className="text-overlay">The Best Crafts for Toddlers</div>
+                                        </div>
+                                        { isLargeScreen ? null : (
+                                            <div className="image-container">
+                                                <img
+                                                    src="https://images.babylist.com/image/upload/f_auto,q_auto:best,c_scale,w_768/v1681404971/hello-baby/What_is_a_Smash_Cake.jpg"
+                                                    alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                                                    className="bg-gray-100 img"                                                />
+                                                     <div className="text-overlay">Everything You Need to Know About Smash Cakes</div>
+                                            </div>
+                                        ) }
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
+                                            View all in Parenting
+                                        </button>
+                                    </div>
+                                </div>
+                                <div className="lg:col-span-3 lg:ml-12">
+                                <div className='text-2xl font-thin'>Friends & Family</div>
+                                    <hr />
+                                    <HerosSix />
+                                    <div className="grid lg:grid-cols-3 mb-36 sm:grid-cols-2 custom-grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                                        <div className="image-container">
+                                            <img
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1523294946/baby_sprinkle_header_egg9kd.jpg"
+                                                alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                                                className="bg-gray-100 img"                                            />
+                                            <div className="text-overlay">What Is a Baby Sprinkle?</div>
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://res.cloudinary.com/babylist/image/upload/f_auto,q_auto:best,c_scale,w_768/v1585852810/hello-baby/virtual-baby-shower-online-header.jpg"
+                                                alt="Top down view of walnut card tray with embedded magnets and card groove."
+                                                className="bg-gray-100 img"                                            />
+                                                 <div className="text-overlay">How to Throw a Virtual Baby Shower</div>
+                                        </div>
+                                        <div className="image-container">
+                                            <img
+                                                src="https://images.babylist.com/image/upload/f_auto,q_auto:best,c_scale,w_768/v1677614002/hello-baby/Best_Gifts_for_Toddlers.jpg"
+                                                alt="Side of walnut card tray with card groove and recessed card area."
+                                                className="bg-gray-100 img"                                            />
+                                                 <div className="text-overlay">Best Gifts for Toddlers</div>
+                                        </div>
+                                        { isLargeScreen ? null : (
+                                            <div className="image-container">
+                                                <img
+                                                    src="https://images.babylist.com/image/upload/f_auto,q_auto:best,c_scale,w_768/v1676595679/hello-baby/How_to_Save_for_Your_Child_s_College_Education_With_a_529.jpg"
+                                                    alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                                                    className="bg-gray-100 img"                                                 />
+                                                     <div className="text-overlay">How to Pay for Baby&apos;s Education with a 529 Plan</div>
+                                            </div>
+                                        ) }
+                                    </div>
+                                    <div className="flex justify-center items-center">
+                                        <button className="px-6 py-2 font-medium tracking-wide text-purple hover:text-white capitalize transition-colors duration-300 transform bg-white border rounded-lg hover:bg-purple focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80 custom-button">
+                                            View all in Friends & Family
                                         </button>
                                     </div>
                                 </div>

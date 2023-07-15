@@ -9,7 +9,7 @@ function Cardty() {
                     <div className="w-full md:w-1/2 px-10 mb-10 md:mb-0">
                         <div className="relative">
                             <Image
-                                src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg"
+                                src="https://media.istockphoto.com/id/1488151753/photo/a-pile-of-baby-clothes-disposable-diapers-and-a-piggy-bank-parenting-expenses-concept-working.webp?b=1&s=170667a&w=0&k=20&c=JpTRoxYrn3Rphc_iivgwcoTX1DLaFBP8_JeR7_x0me4="
                                 alt=""
                                 width={480}
                                 height={320}

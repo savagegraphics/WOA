@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Imageg1 from '../assets/fam6.jpg';
+import Imageg1 from '../assets/preg2.jpg';
 
 
 const Header = () => {
@@ -17,7 +17,7 @@ const Header = () => {
                 </svg>
                 <Image
                     className="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-                    src="https://media.istockphoto.com/id/1225966175/photo/pregnant-woman-with-9-months-of-exciting-expectations-behind-holds-her-tummy.jpg?s=612x612&w=0&k=20&c=q9f4aqmMWTM3qBzASSKcrGDna-ziJ-vghjKtA9_LNOc="
+                    src={Imageg1}
                     alt=""
                     width={1260}
                     height={750}
@@ -28,11 +28,11 @@ const Header = () => {
                     <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
                         Put anything
                     </p>
-                    <h2 className="mb-5 font-serif text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                    <h2 className="mb-5 font-serif text-3xl font-bold tracking-tight text-deepPurple-700 sm:text-4xl sm:leading-none">
                         Onto your baby {' '}
                         <br className="hidden md:block" />
                         registry from {' '}
-                        <span className="inline-block text-deep-purple-accent-400">
+                        <span className="inline-block">
                             any store.
                         </span>
                     </h2>

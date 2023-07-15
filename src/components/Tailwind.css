@@ -4,21 +4,61 @@
     }
 }
 
-.image-container {
-    position: relative;
-}
-
 .text-overlay {
     position: absolute;
-    bottom: -20px;
-    /* Adjust the value to control the amount of overlap */
+    bottom: -40px; /* Adjust the value to control the amount of overlap */
     left: 0;
     right: 0;
-    background-color: azure;
+    background-color: #fff;
     padding: 10px;
     text-align: center;
     margin-left: 14px;
-    font-size: large;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .text-overlayed {
+    position: absolute;
+    bottom: -10px; /* Adjust the value to control the amount of overlap */
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-left: 14px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .img{
+    width: 400px;
+    height: 250px;
+    margin-bottom: 1rem;
+  }
+  
+ .btn {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 6px 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.294);
+    i {
+     margin-left: 20px;
+     font-size: 1.5rem;
+    }
 }
 
 .custom-button {
@@ -41,9 +81,20 @@
         position: static;
         margin-top: 10px;
         /* Adjust the value to control the spacing */
-        background-color: azure;
+        background-color: #fff;
         padding: 0;
         text-align: left;
     }
-
+    .btn{
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 1rem;
+        background-color: none;
+        border-radius: none;
+    }
+    .img{
+        width: 400px;
+        height: 200px;
+      }
 }

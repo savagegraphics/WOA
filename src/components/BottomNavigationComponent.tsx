@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import BottomNavigation from '@mui/material/BottomNavigation';
@@ -11,6 +11,26 @@ import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 const BottomNavigationComponent = () => {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState(router.pathname);
+  const [shouldRender, setShouldRender] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShouldRender(window.innerWidth < 900);
+      setActiveTab(router.pathname);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [router.pathname]);
+
+  if (!shouldRender) {
+    return null;
+  }
 
   const handleTabChange = (event: React.ChangeEvent<{}>, newValue: string) => {
     setActiveTab(newValue);
@@ -27,7 +47,6 @@ const BottomNavigationComponent = () => {
         bottom: 0,
         width: '100%',
         zIndex: 999, // Adjust the z-index value if needed
-        display: window.innerWidth < 900 ? 'flex' : 'none',
       }}
     >
       <BottomNavigationAction label="Home" value="/" icon={<HomeIcon />} />

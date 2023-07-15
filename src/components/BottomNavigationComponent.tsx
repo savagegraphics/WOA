@@ -30,8 +30,8 @@ const BottomNavigationComponent = () => {
         display: 'none', // Hide by default
       }}
       sx={{
-        '@media (max-width: 700px)': {
-          display: 'flex', // Show on screens up to 700px wide
+        '@media (max-width: 699px)': {
+          display: 'flex', // Show on screens up to 699px wide
         },
       }}
     >

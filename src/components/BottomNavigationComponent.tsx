@@ -16,7 +16,6 @@ const BottomNavigationComponent = () => {
     setActiveTab(newValue);
     router.push(newValue);
   };
-  
 
   return (
     <BottomNavigation
@@ -28,11 +27,11 @@ const BottomNavigationComponent = () => {
         bottom: 0,
         width: '100%',
         zIndex: 999, // Adjust the z-index value if needed
-        display: 'none', // Hide on larger screens
+        display: 'none', // Hide by default
       }}
       sx={{
-        '@media (max-width: 900px)': { // Show on screens up to 600px wide
-          display: 'flex',
+        '@media (max-width: 700px)': {
+          display: 'flex', // Show on screens up to 700px wide
         },
       }}
     >

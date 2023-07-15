@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'
+import './Wall.css'
 
 
 const Content = () => {
@@ -23,7 +24,7 @@ const Content = () => {
                     Create Your Babylist
                 </Link>
             </div>
-            <div className="grid max-w-screen-lg gap-8 row-gap-5 mb-8 sm:grid-cols-2 lg:grid-cols-4 sm:mx-auto">
+            <div className="grid max-w-screen-lg gap-8 row-gap-5 mb-8 sm:grid-cols-2 custom-grid-cols-2 lg:grid-cols-4 sm:mx-auto">
                 <Image
                     className="object-cover w-full h-56 rounded shadow-lg"
                     src="https://media.istockphoto.com/id/1241928379/photo/we-are-cute-family.webp?b=1&s=170667a&w=0&k=20&c=QNjmkHiOvD7_9PRS-6fA0HZvVw8JnQC1H0uODJO28cI="

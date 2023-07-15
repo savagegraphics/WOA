@@ -1,21 +1,156 @@
 import React from 'react';
-import './LastCard.css'
+import './LastCard.css';
+
+
+const card = [
+  {
+    id: 1,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Sale'
+  },
+  {
+    id: 2,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Summer Shop'
+  },
+  {
+    id: 3,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'New Arrivals'
+  },
+  {
+    id: 4,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Coming Soon'
+  },
+  {
+    id: 5,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Top Registered'
+  },
+  {
+    id: 6,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Newborn Must-Have'
+  },
+  {
+    id: 7,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Only at Babylist'
+  },
+  {
+    id: 8,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Try-it Kits'
+  },
+  {
+    id: 9,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Clothing & Accessories'
+  },
+  {
+    id: 10,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Nursery'
+  },
+  {
+    id: 11,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Furniture'
+  },
+  {
+    id: 12,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Play & Activity'
+  },
+  {
+    id: 13,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Nursing & Feeding'
+  },
+  {
+    id: 14,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Diapering'
+  },
+  {
+    id: 15,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Strollers'
+  },
+  {
+    id: 16,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Car Seats'
+  },
+  {
+    id: 17,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Travel Systems'
+  },
+  {
+    id: 18,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Carriers'
+  },
+  {
+    id: 19,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Toys & Books'
+  },
+  {
+    id: 20,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Bath & Potty'
+  },
+  {
+    id: 21,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Health & Safety'
+  },
+  {
+    id: 22,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Eco-Friendly'
+  },
+  {
+    id: 23,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Monitors & Cameras'
+  },
+  {
+    id: 24,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Gift Cards, Favors'
+  },
+  {
+    id: 25,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Gift Shop'
+  },
+  {
+    id: 26,
+    imageSrc: "https://source.unsplash.com/random/300x300/?2",
+    name: 'Gift Sets'
+  },
+]
 
 const LastCard = () => {
   return (
     <div className="grid md:grid-cols-3 gap-4 sm:grid-cols-2 custom-grid-cols-2">
-      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
+       {card.map((product) => (
+      <div key={product.id}  className="max-w-xs rounded-2xl shadow-md dark:bg-gray-900 dark:text-gray-100">
         <img
-          src="https://source.unsplash.com/random/300x300/?2"
-          alt=""
-          className="object-cover object-center w-full rounded-t-md h-60 dark:bg-gray-500"
+ src={product.imageSrc}
+           alt=""
+          className="object-cover object-center w-full rounded-t-2xl h-60 dark:bg-gray-500"
         />
            <div className="flex flex-row justify-between p-6 space-y-0">
   <button
     type="button"
-    className="flex items-center justify-start w-full pt-1 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
+    className="flex items-center justify-start w-full pt-1 font-thin tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
   >
-    Read more
+    {product.name}
   </button>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -29,141 +164,9 @@ const LastCard = () => {
   </svg>
 </div>
       </div>
-      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-        <img
-          src="https://source.unsplash.com/random/300x300/?2"
-          alt=""
-          className="object-cover object-center w-full rounded-t-md h-60 dark:bg-gray-500"
-        />
-       <div className="flex flex-row justify-between p-6 space-y-0">
-  <button
-    type="button"
-    className="flex items-center justify-start w-full pt-1 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
-  >
-    Read more
-  </button>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.5}
-    stroke="currentColor"
-    className="w-6 h-8 flex items-right justify-self-right"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-  </svg>
-</div>
-
-      </div>
-      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-        <img
-          src="https://source.unsplash.com/random/300x300/?2"
-          alt=""
-          className="object-cover object-center w-full rounded-t-md h-60 dark:bg-gray-500"
-        />
-           <div className="flex flex-row justify-between p-6 space-y-0">
-  <button
-    type="button"
-    className="flex items-center justify-start w-full pt-1 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
-  >
-    Read more
-  </button>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.5}
-    stroke="currentColor"
-    className="w-6 h-8 flex items-right justify-self-right"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-  </svg>
-</div>
-      </div>
-      <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100">
-        <img
-          src="https://source.unsplash.com/random/300x300/?2"
-          alt=""
-          className="object-cover object-center w-full rounded-t-md h-60 dark:bg-gray-500"
-        />
-           <div className="flex flex-row justify-between p-6 space-y-0">
-  <button
-    type="button"
-    className="flex items-center justify-start w-full pt-1 font-semibold tracking-wide rounded-md dark:bg-violet-400 dark:text-gray-900"
-  >
-    Read more
-  </button>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 24 24"
-    strokeWidth={1.5}
-    stroke="currentColor"
-    className="w-6 h-8 flex items-right justify-self-right"
-  >
-    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-  </svg>
-</div>
-      </div>
-    </div>
+      ))}
+ </div>
   );
 };
 
 export default LastCard;
-
-
-
-// import React from 'react'
-// import './LastCard.css'
-
-
-
-// const products = [
-//     {
-//         id: 1,
-//         href: '#',
-//         imageSrc: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMHByb2R1Y3RzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
-//         title: 'Kelsie Meyer',
-//     },
-//     {
-//         id: 2,
-//         href: '#',
-//         imageSrc: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMHByb2R1Y3RzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
-//         title: 'Mark Carusso',
-//     },
-//     {
-//         id: 3,
-//         href: '#',
-//         imageSrc: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMHByb2R1Y3RzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
-//         title: 'Taylor Green',
-//     },
-//     {
-//         id: 4,
-//         href: '#',
-//         imageSrc: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFieSUyMHByb2R1Y3RzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60',
-//         title: 'Isaiah Jian',
-//     },
-// ]
-
-// const LastCard = () => {
-//   return (
-//     <div className='root'>
-//   <div className="wrap custom-grid-cols-2 ">
-//   {products.map((product) => (
-//   <div key={product.id} className="box">
-//     <div className="box-top">
-//       <img className="box-image" 
-//         src={product.imageSrc}
-//     />
-//       <div className="title-flex">
-//         <h3 className="box-title">{product.title}</h3>
-//       </div>
-//         </div>
-//   </div> 
-//   ) )}
-// </div>
-//     </div>
-//   )
-// }
-
-// export default LastCard
